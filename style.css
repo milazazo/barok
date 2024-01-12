@@ -1,0 +1,43 @@
+body{
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 228, 228);
+}
+
+clear{
+    display: inline-block;
+    width: 2em;
+}
+
+    #content{
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    }
+
+#links{
+    background-color: #c92b16;;
+    width: 100vw;
+    position:fixed;
+    top: 0;
+    right:0;
+    height: 4em;
+    text-align: right;
+    color:white;
+    z-index: 5;
+}
+
+#links a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1080px) {
+    #content{
+        width: 90%;
+        top: 12%;
+        left: 5%;
+    }
+}
