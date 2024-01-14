@@ -2,87 +2,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <meta name="title" content="art"> 
 
     <style>
         #gallery{
-            position: absolute;
-            top:12%;
-            left: 40%;
-            height:80vh;
-            width: 57vw;
+            position: fixed;
+            top: 6em;
+            left: 42.5%;
+            height: 81vh;
+            width: 50vw;
             border: none;
-            text-align: right;
+            display: block;
+            overflow: hidden;
+        }
+
+        .gallery-img{
+            height: 81vh;
+            width: 50vw;
+            overflow: auto;
+            color: rgb(99, 99, 99);
+        }
+
+        .gallery-img img{
+            max-width: 49vw;
+            max-height: 73vh;
         }
 
         #content{
-            width: 22.5%;
+            width: 25%;
         }
 
-        img{
+        #content img{
             border: solid 1px white;
         }
+
+        .grey{
+            filter: grayscale(1);
+            pointer-events: none;
+        }
+
+        @media screen and (max-width: 1080px) {
+            #gallery{
+            position:relative;
+            top: 4em;
+            left: 2.5vw;
+            height: 20em;
+            width: 90vw;
+            border: none;
+            display: block;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .gallery-img{
+            height: 20em;
+            width: 88vw;
+            overflow: auto;
+            margin-top: 1em;
+        }
+
+        .gallery-img img{
+            max-height: 17.5em;
+            max-width: 88vw;
+        }
+        
+        #content{
+            position: relative;
+            top: 0em;
+            width: 90%;
+            left: 5%;
+        }
+}
     </style>
 </head>
 <body>
     <div id="links"><br>
-        <a href="">about</a> / <a href="">art</a> / <a href="">archive</a> / <a href="">downloads</a> / <a href="">3630</a><clear></clear>
+        <a href="about">about</a> / <a href="art">art</a> / <a href="archive">archive</a> / <a href="downloads">downloads</a><clear></clear>
     </div>
 
-    <div id="content">        
-        <h1>art</h1>
+    <div id="gallery">
+        <a name="nyanzieks"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/0feb4e.jpg"><br>▲ nyanzieks 3D model</div>
+        <a name="hanok"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/8zi2x0.jpg"><br>▲ modular hanok set based on ajihaew's concept art</div>
+        <a name="tgaacollab"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/b3zteb.jpg"><br>▲ promo art for tgaa collab</div>
+        <!--2022-->
+        <a name="pieceofcake"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/almduz.jpg"><br>▲ page illust for eureka! zine<br>katherine my beloved</div>
+        <!--2021-->
+        <a name="feast"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/s5fjii.jpg"><br>▲ comic for feast zine<br>there's two more pages to this i'll add them later</div>
+        <a name="kinemon"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/nq4fpx.png"><br>▲ promo art for feast zine</div>
+        <a name="bruno"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/j7tqu1.jpg"><br>▲ page illust for let's go johto! zine</div>
+        <a name="kashiwagi"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/qbmsff.jpg"><br>▲ comic for yakuza artbook</div>
+        <a name="keyes"></a>
+        <div class="gallery-img"><img src="https://files.catbox.moe/4njztk.jpg"><br>▲ card illust for turnabout tarot</div>
+    </div>
+
+    <div id="content">
+        <h1 class="desktop-only">art</h1>
         <br>2023<br>
-        <a href="404" target="gallery"><img src="img/art/2023_zolu.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2023_christmas.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2023_vanlock.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2023_asoryu.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/0feb4e.jpg" target="gallery"><img src="img/art/2023_nyanzieks.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/8zi2x0.jpg" target="gallery"><img src="img/art/2023_hanok.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/b3zteb.jpg" target="gallery"><img src="img/art/2023_tgaacollab.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2023_zolu.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2023_christmas.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2023_vanlock.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2023_asoryu.png" style="width: 40px;"></a>
+        <a href="#nyanzieks"><img src="img/art/2023_nyanzieks.png" style="width: 40px;"></a>
+        <a href="#hanok"><img src="img/art/2023_hanok.png" style="width: 40px;"></a>
+        <a href="#tgaacollab"><img src="img/art/2023_tgaacollab.png" style="width: 40px;"></a>
         <br><br>2022<br>
-        <a href="404" target="gallery"><img src="img/art/2022_christmas.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_asogi.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_mcr.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_blackquill.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/almduz.jpg" target="gallery"><img src="img/art/2022_pieceofcake.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_yatagarasu.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_greatexhibition.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_keyes.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_manosouta.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2022_meitenkun.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_christmas.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_asogi.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_mcr.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_blackquill.png" style="width: 40px;"></a>
+        <a href="#pieceofcake"><img src="img/art/2022_pieceofcake.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_yatagarasu.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_greatexhibition.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_keyes.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_manosouta.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2022_meitenkun.png" style="width: 40px;"></a>
         <br><br>2021<br>
-        <a href="https://files.catbox.moe/s5fjii.jpg" target="gallery"><img src="img/art/2021_feast.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_fujitora.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/nq4fpx.png" target="gallery"><img src="img/art/2021_kinemon.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/j7tqu1.jpg" target="gallery"><img src="img/art/2021_bruno.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/qbmsff.jpg" target="gallery"><img src="img/art/2021_kashiwagi.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_halloween.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_yasuho.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_onepiece.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_junepei.png" style="width: 40px;"></a>
-        <a href="https://files.catbox.moe/4njztk.jpg" target="gallery"><img src="img/art/2021_keyes.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_arcade.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_katherine.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2021_fridaynight.png" style="width: 40px;"></a>
+        <a href="#feast"><img src="img/art/2021_feast.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_fujitora.png" style="width: 40px;"></a>
+        <a href="#kinemon"><img src="img/art/2021_kinemon.png" style="width: 40px;"></a>
+        <a href="#bruno"><img src="img/art/2021_bruno.png" style="width: 40px;"></a>
+        <a href="#kashiwagi"><img src="img/art/2021_kashiwagi.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_halloween.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_yasuho.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_onepiece.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_junepei.png" style="width: 40px;"></a>
+        <a href="#keyes"><img src="img/art/2021_keyes.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_arcade.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_katherine.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2021_fridaynight.png" style="width: 40px;"></a>
         <br><br>2020<br>
-        <a href="404" target="gallery"><img src="img/art/2020_idolmaster.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_terry.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_stemgirls.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_tosakatrio.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_kuroaka.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_ema.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_trucy.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_hokuto.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/2020_mayablackquill.png" style="width: 40px;"></a>
-        <br><br>older<br>
-        <a href="404" target="gallery"><img src="img/art/old_worldtreasure.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_amana.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_bart.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_touma.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_315diner.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_jupiter.png" style="width: 40px;"></a>
-        <a href="404" target="gallery"><img src="img/art/old_shinsoku.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_idolmaster.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_terry.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_stemgirls.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_tosakatrio.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_315diner.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_kuroaka.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_ema.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_trucy.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_hokuto.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/2020_mayablackquill.png" style="width: 40px;"></a>
+        <br><br>2017-2019<br>
+        <a href="#404" class="grey"><img src="img/art/old_worldtreasure.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_amana.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_bart.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_touma.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_younggenbu.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_jupiter.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_shinsoku.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_valentines.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_letter.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/old_w.png" style="width: 40px;"></a>
+        <br><br>2014-2016<br>
+        <a href="#404" class="grey"><img src="img/art/older_shinsoku.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/older_hayasaka.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/older_yuri.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/older_lisalisa.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/older_trish.png" style="width: 40px;"></a>
+        <a href="#404" class="grey"><img src="img/art/older_cly.png" style="width: 40px;"></a>
     </div>
-
-    <iframe id="gallery" name="gallery" src="">
-    </iframe>
 </body>

@@ -8,11 +8,39 @@ clear{
     width: 2em;
 }
 
+h1, h2{
+    color: #c92b16
+}
+
+h3{
+    margin-bottom: -0.6em;
+}
+
+a{
+    color: #c92b16;
+}
+
+th{
+    background-color: #c92b16;
+    color: white;
+    font-size: larger;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: left;
+    padding-left: 0.8em;
+}
+
+td{
+    padding: 0.4em;
+}
+
+tr:nth-child(even) {background-color: white;}
+
     #content{
     text-align: left;
     width: 50%;
     position: absolute;
-    top: 10%;
+    top: 6em;
     left: 15%;
     }
 
@@ -34,10 +62,38 @@ clear{
     font-weight: 600;
 }
 
+.mobile-only{
+    visibility: hidden;
+}
+
+.desktop-only{
+    visibility: visible;
+}
+
 @media screen and (max-width: 1080px) {
     #content{
         width: 90%;
-        top: 12%;
+        top: 4em;
         left: 5%;
+    }
+
+    #links{
+        background-color: #c92b16;;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right:0;
+        height: 4em;
+        text-align: right;
+        color:white;
+        z-index: 5;
+    }
+
+    .mobile-only{
+        visibility: visible;
+    }
+
+    .desktop-only{
+        visibility: hidden;
     }
 }
