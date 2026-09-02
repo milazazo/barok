@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+    <title>TGAA collab retrospective </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box desktop-only">
+    <a href="/" class="title">username</a>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</div>
+<a href="/" class="title mobile-only">username</a>
+<details class="nav-box mobile-only">
+    <summary class="nav-menu-button"></summary>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</details>
+    </header>
+
+    <main>
+        <h1>TGAA collab retrospective</h1>
+        2023-07-28
+        <p><img src="https://64.media.tumblr.com/13f60a8967657b7e74e308c61d127fcb/e32d84dd8eca6065-8e/s1280x1920/12773acc880a953f82fd05d444d5691200eacadd.png" alt=""></p>
+<p>i finally posted <strong><a href="https://tgaa.milaza.net">the great ace attorney art collaboration</a></strong> today. as the title suggests, it's an art collab featuring characters from the game. the image itself looks really good and i'm happy with how it turned out. that final output is pretty standard as far as art collaborations go though, so this post will just focus on the code which was what i was primarily working on... yeah, judging by how it got around 200 link clicks, i feel like i didn't make it clear enough that it was a whole website LOL. but i'm pretty happy and proud of the layout i came up with so i'll share it here in case anyone wants to use it as well.</p>
+<p>as a disclaimer, i'm purely a hobbyist when it comes to html/css/javascript and i don't know anything about what's right or wrong! but since it's written from a non-webdev point of view, it might be useful to other people who aren't as familiar with it either. feel free to look through the source code or the github repo if you know where to find it.</p>
+<h2>planning</h2>
+<p>it's based on 합작 (<em>hapjak</em>) collaboration websites which are popular in korean fandom. single-character collabs are particularly common in character-focused fandoms which is what i'm used to, so i wanted to make something like that but with a traditional 'art collaboration' layout rather than having the pieces be separate from each other. such a layout isn't possible with website builders, thus i decided to make it myself.</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728224413.png" alt=""></p>
+<p>i made a mockup and it was really ugly, but i figured i could get the layout and visuals working later! (the slideshow aspect was there from the start since i just used <a href="https://www.w3schools.com/howto/howto_js_lightbox.asp">w3schools lightbox code</a>.)</p>
+<h2>structure</h2>
+<p>for the display, my primary goal was to make a flexible grid layout so that there could be a different number of characters on each row on mobile and desktop without having to manually position all of them. that's easy enough on its own, but i also wanted to have the gap between each character as well as overlapping characters so it seemed more like a cohesive put-together image rather than a flat grid of characters next to each other.</p>
+<p>the solution i came up with is essentially <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">a grid</a> with both 'blank spaces' and 'art spaces', which makes it <em>look</em> like it's centered while the characters are able to overlap with each other in the gaps. simplified, it's like this:</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728224659.png" alt=""></p>
+<p>using <em>nth-child</em> and <a href="https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/">differing css based on screen size</a>, i could then state how many &quot;grid-artist&quot; and &quot;grid-blank&quot;s i wanted in each row. it's still a bit of work, but it's far better than manually positioning every artist box for desktop and mobile like i worried i would need to.</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728224814.png" alt=""></p>
+<p>i'm sure there's a better way of going about this, and if anyone has any suggestions i'd love to hear it. (particularly, i'm bothered that i had to create the grid manually in the html file in order to have klint and lady b be 'centered' differently on mobile and desktop, and i feel like i should just be able to say &quot;have ___ number of items in each row&quot; in the css without having to write the numbers myself.)</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728224925.png" alt=""></p>
+<p>as well, sometimes the positioning of the artwork wasn't great, so i just used div ids to move specific characters.</p>
+<div class="note">
+<p><strong>23/02/26 update:</strong> i should have just used a flexbox.</p>
+</div>
+<h2>automation</h2>
+<p>the other big goal was to draw data from a spreadsheet instead of needing to manually copy and paste the code a bunch of times for the artist info. honestly, there were only 54 participants so it wasn't necessary to set up such a structure, but i'm glad i did it because it was so much easier to deal with when i made some layout changes in the end. for this i used javascript which i previously had no experience with.</p>
+<p>getting data from an active spreadsheet <em>is</em> really unnecessary though, so what i did was use <a href="https://www.techradiant.com/2023/01/07/how-to-convert-csv-data-into-an-array-in-javascript/">this .csv to array conversion code</a> which allowed me to export a .csv file from a spreadsheet use that to automatically create divs with the artist information. after that, i used if statements for creating certain divs based on whether the artist had a twitter listed and such.</p>
+<p>overall, the layout's scalable and flexible. spreadsheets are a lot easier to manage than copying code over and over again, and it'd be easy to add a hundred more artists with the setup i have. i feel like the equivalent of an illustrator who discovered the multiply layer mode for the first time, but i'm really proud of it! it was fun!!!</p>
+<h2>minigame</h2>
+<p>i added a cat collecting minigame at last minute and i'm pretty sure nobody realized it was a thing since i didn't mention it anywhere and it was put in after i messaged the artists for final revisions. i thought it was pretty cute and funny though. all it is is inserting a secret kitty after three of the artist divs randomly. when you click on all three, you get a congratulations notice and <a href="https://click-to-tweet-link-generator.netlify.app/">a button to tweet</a> that you found all of the cats.</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728225524.png" alt=""></p>
+<p><strong>but no one tweeted it!!!</strong></p>
+<p>i put it in to encourage people to open up the full artwork in search of all of the cats, but it seems not a single person did it and tweeted it so LOL. at least it was quick and easy to make: just this and another function that adds to a variable whenever a cat is found.</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728233543.png" alt=""></p>
+<h2>thoughts</h2>
+<p>initially, i had a lot more to say about the presentation of digital projects, but considering that hardly anyone actually clicked on the site i feel like what i had to say about that doesn't matter. still, i think permanence is important for digital projects. as an artist, i want my artwork to be presented nicely with a feeling that 'it'll always be there'. maybe that's why physical zines are appealing to me even if i have no interest in actually owning a physical copy of the book.[^1] twitter is going to shit and google drive isn't accessible through search engines, so it's important to at least put your digital projects on itch.io or gumroad for permanence, even if they're free.</p>
+<p>i say digital projects but people only make zines nowadays anyway. i feel like it's pretty funny to see some people treat this as if it was a zine when i never called it that (ok, i did advertise it in zine town server but i didn't tag zine promo accounts or anything). this is just a regular art collab with a very extra organizer who likes to do whatever he wants. i mentioned 합작 sites before, but even outside of single-character focused sites, i would like to see more english digital zines in that style. the format of digital zines in english fandom feels too limited; there's no reason for a digital-only art collection to be in a specific format or for fic to be limited to particular wordcount if it's not going to be printed anyway.</p>
+<h2>future</h2>
+<p>anyway my next project is a digital-only art collection zine in a specific format.</p>
+<p>the twist is that it's specifically designed for printing at home, so it warrants having a a lot of specifications on the file dimensions and colors (color ink is expensive so it's monochrome only). the theme is DGS characters as dogboys. i've had the site prepared for three months now, but i need to sort out some IRL things first before i can go ahead with it.</p>
+<p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20230728/20230728230827.png" alt=""></p>
+<p>with tgaa collab, i didn't hold applications because 1) i genuinely thought i'd only get 54 signups across a whole month[^2], and 2) i hate rejecting people. the first-come first-served method totally sucked though and i still feel really bad about that.[^3] it seems by my recent twitter poll that people do prefer portfolio-based applications so i will be very brave and reject people for once.</p>
+<p>as i said before, tgaa collab's code is scalable so i may host it again in the future with a different theme and fully open submissions (no assigned characters). as well, if anyone else wants to make something similar for any series then you're welcome to just pull the code directly. i won't bother cleaning it up unless someone really wants to make something with it though, so if you do then feel free to message me.</p>
+<p>that's all! overall, again, i am <em>super</em> happy with how the collaboration looks in the end. thank you to everyone who drew something for it! happy 2nd anniversary to the game that made me insane for a ****** man!!!</p>
+<p>[^1]: on a side note, i'm really conflicted about using my personal URL for the website. maybe i should've stuck to tgaacollab.github.io afterall, but it's kinda just ugly to look at is the thing. i'm using my main domain for regular portfolio stuff right now so i feel a sense of anxiety and dread to also use it for fanart projects. ahh... i forgot that i was planning to link the website separately in case i would need to change it (sorry i can't afford to pay for a new domain entirely for the next few years). shit!!! fuck!!! don't perceive me!!!
+[^2]: it was based on the amount of time it takes for me to get 50+ signups for my annual sideM secret santa. the slots for this instead filled up in <em>10 minutes</em> so i think that DGS fans who think the fandom is small are crazy.
+[^3]: fun fact: daylight savings kicked in on literally the day i opened signups without me realizing, so that was why i was late LOL.</p>
+
+            
+                
+            
+                
+                    <a href="/log/2023">2023</a>
+                
+            
+                
+                    <a href="/log/ace-attorney"> ace attorney</a>
+                
+            
+                
+                    <a href="/log/art"> art</a>
+                
+            
+                
+                    <a href="/log/coding"> coding</a>
+                
+            
+                
+                    <a href="/log/process"> process</a>
+                
+            
+                
+                    <a href="/log/report"> report</a>
+                
+            
+                
+                    <a href="/log/zine"> zine</a>
+                
+            
+
+    </main>
+
+    <footer>
+    </footer>
+
+
+    
+    
+
+
+</body>
+</html>

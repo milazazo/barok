@@ -1,43 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+    <title>the dog den</title>
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-            body{
-                font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
-                background-color: rgb(228, 228, 228);
-            }
 
-            #content{
-            text-align: center;
-            width: 50%;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            -ms-transform: translate(-50%, -30%);
-            transform: translate(-50%, -30%)
-            }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
 
-            #content img{
-                width: 50%;
-            }
+.log:hover{
+    background-color: var(--white-color);
+    color:var(--text-color);
+}
 
-            @media screen and (max-width: 1080px) {
-                #content{
-                    width: 90%;
-                }
+.log-newest-inner{
+    height:320px;
+    overflow-y:scroll;
+}
 
-                #content img{
-                    width: 100%;
-                }
-            }
+.log-newest-title {
+    line-height: 2px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.log p{
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+
+.art input{
+    height:200px;
+    width:32.7%;
+    object-fit: cover;
+}
+
+.art a:hover{
+    border-bottom: none;
+}
+
+.sitely a{
+    display: block;
+    background-color: var(--white-color);
+    padding: 0.3em;
+    border: 1px solid;
+    margin-bottom: 0.2em;
+}
+
+.scroll-box{
+    overflow-y:scroll;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+            
+.intro-box{
+    background-color: var(--white-color);
+    padding: 1.5em;
+}
+
+.header-bar{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 0.2em 1em 0.2em 1em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.little-link{
+    float:right;
+    color:var(--background-color);
+    font-weight: 200;
+        transition: var(--transition-time);
+}
+
+.little-link:hover{
+    float:right;
+    color:var(--background-color);
+    font-weight: 200;
+    letter-spacing: 4px;
+    transition: var(--transition-time);
+}
+
+h2::before{
+    content:none;
+}
+
+.blog-card-title{
+    letter-spacing: 0px;
+}
+
+.blog-card p{
+    font-size: 0.8em;
+}
+
+.blog-card-byline{
+    display: none;
+}
+
+a{
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 1280px) {
+
+        body{
+    overflow-y: hidden;
+    }
+
+    .log {
+        grid-column: span 2 / span 2;
+        height:320px;
+    }
+
+    .log2 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 3;
+    }
+
+    .art {
+        grid-column: span 3 / span 3;
+        grid-row-start: 2;
+    }
+
+    .now {
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .sitely {
+        grid-column-start: 5;
+        grid-row-start: 2;
+        text-align: justify;
+    }
+
+    .intro{
+     height:100px;
+     width:66%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+.log {
+    grid-column: span 5 / span 5;
+}
+
+.log2 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.art {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.now {
+    grid-column: span 3 / span 3;
+    grid-row-start: 4;
+}
+
+.sitely {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+}
     </style>
 </head>
 <body>
-    <div id="content">        
-        <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Barok&dob=1704572790&gender=m&element=Water&pet=https%3A%2F%2Ffiles.catbox.moe%2F8g8eld.png&map=https%3A%2F%2Ffiles.catbox.moe%2Feua9fu.png&background=&tablecolor=black&textcolor=black" frameborder="0"></iframe>
-        <br>
-        <marquee behavior="alternate" scrolldelay="60" style="font-size: 30px;"><div class="rainbow-text" style="text-align: center;">
-            <span class="block-line"><span><span style="color:#ff0000;">t</span><span style="color:#ff2600;">h</span><span style="color:#ff4d00;">i</span><span style="color:#ff6e00;">s&nbsp;</span></span><span><span style="color:#ff9500;">p</span><span style="color:#ffb700;">a</span><span style="color:#ffdd00;">g</span><span style="color:#ffff00;">e&nbsp;</span></span><span><span style="color:#d9ff00;">i</span><span style="color:#b2ff00;">s&nbsp;</span></span><span><span style="color:#91ff00;">s</span><span style="color:#6aff00;">p</span><span style="color:#48ff00;">o</span><span style="color:#22ff00;">n</span><span style="color:#00ff00;">s</span><span style="color:#00ff26;">o</span><span style="color:#00ff4d;">r</span><span style="color:#00ff6f;">e</span><span style="color:#00ff95;">d&nbsp;</span></span><span><span style="color:#00ffb7;">b</span><span style="color:#00ffdd;">y&nbsp;</span></span><span><span style="color:#00fbff;">s</span><span style="color:#00d9ff;">e</span><span style="color:#00b2ff;">v</span><span style="color:#0091ff;">e</span><span style="color:#006aff;">n&nbsp;</span></span><span><span style="color:#0048ff;">@</span><span style="color:#0022ff;">y</span><span style="color:#0400ff;">o</span><span style="color:#2600ff;">u</span><span style="color:#4d00ff;">k</span><span style="color:#6e00ff;">a</span><span style="color:#9500ff;">i</span><span style="color:#b700ff;">d</span><span style="color:#dd00ff;">e</span><span style="color:#ff00fb;">t</span><span style="color:#ff00d9;">e</span><span style="color:#ff00b2;">c</span><span style="color:#ff0091;">t</span><span style="color:#ff006a;">i</span><span style="color:#ff0048;">v</span><span style="color:#ff0022;">e</span></span></span>
-        </div></marquee>
+    <header>
+        <div class="nav-box desktop-only">
+    <a href="/" class="title">username</a>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</div>
+<a href="/" class="title mobile-only">username</a>
+<details class="nav-box mobile-only">
+    <summary class="nav-menu-button"></summary>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</details>
+    </header>
+
+    <main>
+        <div class="intro">
+    <p class="intro-box">my introduction goes here :) YIPPEEEEEEEEEEEEEEEEEEEEEEEEEEEE!</p>
+</div>
+
+<div class="header-bar">latest post <a href="/log" class="little-link">all log posts ▶</a></div>
+
+<div class="parent">
+    <a href="/log/monthly-recap-august-2026/" class="log desktop-only">
+        <div class="log-newest-inner"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/monthly-recap-august-2026.webp" style="width:100%">
+        <span class="log-newest-title">Monthly recap (August 2026)</span>
+        <p>Yay!!!!!!!!!!!!!!!! Welcome to my website!!!!!!!!!!!!!!!</p></div>
+    </a>
+
+    <div class="log2 scroll-box" style="height:320px" >
+<a href="/log/monthly-recap-august-2026/" class="blog-card mobile-only">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/monthly-recap-august-2026.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">Monthly recap (August 2026)</div>
+        <p>Yay!!!!!!!!!!!!!!!! Welcome to my website!!!!!!!!!!!!!!!</p>
     </div>
+</a>
+        
+        
+        <div class="blog-list">
+     
+        
+            
+    
+
+     
+        
+            
+                <a href="/log/tsuyoshi-kusano-atsushi-nishigori-tokyo-pop-guide-interview/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/tsuyoshi-kusano-atsushi-nishigori-tokyo-pop-guide-interview.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">Tsuyoshi Kusano &amp; Atsushi Nishigori Tokyo Pop Guide interview</div>
+        <p>In 2016, the IOEA and JMAG published Tokyo Pop Guide, a 108-page guide to travelling in Japan for English-speaking otaku.</p>
+        <div class="blog-card-byline">2026-08-20⠀⠀2332 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+                <a href="/log/in-the-scene/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">In the scene</div>
+        <p>Went to The Button Factory to watch Meaning 1, a performance art show hosted by Sandy Loam.</p>
+        <div class="blog-card-byline">2026-08-16⠀⠀3053 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+                <a href="/log/monthly-recap-july-2026/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/monthly_recap_july_2026.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">Monthly recap (July 2026)</div>
+        <p>Well I ended up writing way more than usual after I said all that shit about wanting to take a break.</p>
+        <div class="blog-card-byline">2026-08-07⠀⠀1716 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+                <a href="/log/auckland-zinefest-2026-report/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/auckland_zinefest_2026_report.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">Auckland Zinefest 2026 report</div>
+        <p>Tabled at Auckland Zinefest on Sunday. Boys, we are so back.</p>
+        <div class="blog-card-byline">2026-08-05⠀⠀4673 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+                <a href="/log/zodiac-buddies-risoprint-process/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/zodiac-buddies-risoprint-process.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">Zodiac buddies risoprint process</div>
+        <p>Process for a zodiac animal 4x6 risoprint that I sold at Auckland Zinefest last weekend.</p>
+        <div class="blog-card-byline">2026-08-04⠀⠀940 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+                <a href="/log/if-all-you-care-about-is-praise/" class="blog-card">
+    <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/if_all_you_care_about_is_praise.webp"></div>
+    <div class="blog-card-inner">
+        <div class="blog-card-title">If all you care about is praise, just pick up litter around town</div>
+        <p>Me and Roboco critical analysis.</p>
+        <div class="blog-card-byline">2026-07-31⠀⠀1333 words</div>
+    </div>
+</a>
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+</div>
+
+
+    </div>
+
+    <div class="art"><div class="header-bar">latest art <a href="/art" class="little-link">all artwork ▶</a></div>
+        <div class="scroll-box no-scroll" style="height:200px">
+        
+        <div class="art-list">
+    
+    <input type="image" src="/assets/art/2026/overload-2026-art-competition.webp" popovertarget="art-pop-2026/overload-2026-art-competition.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2026/overload-2026-art-competition.webp">
+  <img src="/assets/art/2026/overload-2026-art-competition.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+
+    
+    <input type="image" src="/assets/art/2026/pro_wrestling_sketches.webp" popovertarget="art-pop-2026/pro_wrestling_sketches.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2026/pro_wrestling_sketches.webp">
+  <img src="/assets/art/2026/pro_wrestling_sketches.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">pro wrestling</div>
+  </div></div>
+
+    
+    <input type="image" src="/assets/art/2026/bundabear.webp" popovertarget="art-pop-2026/bundabear.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2026/bundabear.webp">
+  <img src="/assets/art/2026/bundabear.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+</div>
+
+        </div>
+    </div>
+
+    <div class="now">
+        <div class="header-bar">updates</div>
+        <div style="font-size:small">we have updated the website at last. YAYY! idk what else to write here</div>
+    </div>
+
+        <div class="sitely">
+        <div class="header-bar">contact</div>
+        <img src="https://file.garden/aTfQE1754gctZTxl/buttons/wulfpaper_banner.png">
+            <img src="https://file.garden/aTfQE1754gctZTxl/buttons/milaza_banner.png">
+            <a href="">sign guestbook</a>
+            <a href="">join mailing list</a>
+            <a href="">email me</a>
+    </div>
+</div>
+    </main>
 </body>
+</html>

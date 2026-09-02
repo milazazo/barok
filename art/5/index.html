@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+    <title>art</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .art-list{
+            display: flex;
+            gap: 0.8em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        .art-list input{
+        width: 100px;
+        height: 100px;
+        object-fit: cover; 
+        background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-box desktop-only">
+    <a href="/" class="title">username</a>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</div>
+<a href="/" class="title mobile-only">username</a>
+<details class="nav-box mobile-only">
+    <summary class="nav-menu-button"></summary>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</details>
+    </header>
+    <main>
+        <h1>art</h1>
+        <p></p>
+        <div id="side" class="nav-box">
+    <button class="nav-heading" popovertarget="tag-year">year</button>
+    <nav id="tag-year" popover class="side-pop nav-list">
+        
+            <a href="/art/2026">2026</a>
+            
+        
+            <a href="/art/2025">2025</a>
+            
+        
+            <a href="/art/2024">2024</a>
+            
+        
+            <a href="/art/2023">2023</a>
+            
+        
+            <a href="/art/2022">2022</a>
+            
+        
+            <a href="/art/2021">2021</a>
+            
+        
+            <a href="/art/2020">2020</a>
+            
+        
+            <a href="/art/2019">2019</a>
+            
+        
+            <a href="/art/2018">2018</a>
+            
+        
+            <a href="/art/2017">2017</a>
+            
+        
+            <a href="/art/2016">2016</a>
+            
+        
+            <a href="/art/2015">2015</a>
+            
+        
+            <a href="/art/2014">2014</a>
+            
+        
+            <a href="/art/2013">2013</a>
+            
+        
+            <a href="/art/2012">2012</a>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </nav>
+    <button class="nav-heading" popovertarget="tag-series">series</button>
+    <nav id="tag-series" popover class="side-pop nav-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <a href="/art/original">original</a>
+            
+        
+            <a href="/art/idolmaster">idolmaster</a>
+            
+        
+            <a href="/art/love-live">love live</a>
+            
+        
+            <a href="/art/ace-attorney">ace attorney</a>
+            
+        
+            <a href="/art/zero-escape">zero escape</a>
+            
+        
+            <a href="/art/kof">kof</a>
+            
+        
+            <a href="/art/dc">dc</a>
+            
+        
+            <a href="/art/marvel">marvel</a>
+            
+        
+            <a href="/art/jjba">jjba</a>
+            
+        
+            <a href="/art/one-piece">one piece</a>
+            
+        
+            <a href="/art/oresama-teacher">oresama teacher</a>
+            
+        
+            <a href="/art/homestuck">homestuck</a>
+            
+        
+            <a href="/art/pro-wrestling">pro wrestling</a>
+            
+        
+            <a href="/art/yakuza">yakuza</a>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </nav>
+    <button class="nav-heading" popovertarget="tag-character">character</button>
+    <nav id="tag-character" popover class="side-pop nav-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <a href="/art/genbu-kurono">genbu kurono</a>
+            
+        
+            <a href="/art/suzaku-akai">suzaku akai</a>
+            
+        
+            <a href="/art/hokuto-ijuuin">hokuto ijuuin</a>
+            
+        
+            <a href="/art/amehiko-kuzunoha">amehiko kuzunoha</a>
+            
+        
+            <a href="/art/simon-blackquill">simon blackquill</a>
+            
+        
+            <a href="/art/bronco-knight">bronco knight</a>
+            
+        
+            <a href="/art/barok-van-zieks">barok van zieks</a>
+            
+        
+            <a href="/art/amana-osaki">amana osaki</a>
+            
+        
+    </nav>
+
+    <a class="nav-heading" href="/art/4/">prev</a>
+    <a class="nav-heading" href="/art/6/">next</a>
+
+</div>
+<div class="art-list">
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/k-comm.webp" popovertarget="art-pop-2019/k-comm.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/k-comm.webp">
+  <img src="/assets/art/2019/k-comm.webp" loading="lazy">
+  <p>commission for k</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/matt-ben.webp" popovertarget="art-pop-2019/matt-ben.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/matt-ben.webp">
+  <img src="/assets/art/2019/matt-ben.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/some-guy.webp" popovertarget="art-pop-2019/some-guy.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/some-guy.webp">
+  <img src="/assets/art/2019/some-guy.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/barry-bart-mario-kart.webp" popovertarget="art-pop-2019/barry-bart-mario-kart.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/barry-bart-mario-kart.webp">
+  <img src="/assets/art/2019/barry-bart-mario-kart.webp" loading="lazy">
+  <p>barry and bart play mario kart!!</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/flash-bart.webp" popovertarget="art-pop-2019/flash-bart.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/flash-bart.webp">
+  <img src="/assets/art/2019/flash-bart.webp" loading="lazy"><br><img src="/assets/art/2019/flash-barry.webp" loading="lazy"><br>
+  <p>bart and barry, it’s the speedster duo across generations!</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/genbu-birthday.webp" popovertarget="art-pop-2019/genbu-birthday.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/genbu-birthday.webp">
+  <img src="/assets/art/2019/genbu-birthday.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/sidem-5th-anniversary.webp" popovertarget="art-pop-2019/sidem-5th-anniversary.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/sidem-5th-anniversary.webp">
+  <img src="/assets/art/2019/sidem-5th-anniversary.webp" loading="lazy">
+  <p>sideM 5th anniversary art</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/genbu-boop.webp" popovertarget="art-pop-2019/genbu-boop.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/genbu-boop.webp">
+  <img src="/assets/art/2019/genbu-boop.webp" loading="lazy">
+  <p>genbu when has bancho-san head boop: !!!!!</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/devil-human-god.webp" popovertarget="art-pop-2019/devil-human-god.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/devil-human-god.webp">
+  <img src="/assets/art/2019/devil-human-god.webp" loading="lazy">
+  <p>the devil (goat), the man (vampire), the god (chuunibyou)</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/shinsoku-pokemon.webp" popovertarget="art-pop-2019/shinsoku-pokemon.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-pokemon.webp">
+  <img src="/assets/art/2019/shinsoku-pokemon.webp" loading="lazy">
+  <p>You have been challenged by Yankee Idols Suzaku and Genbu!</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/kuroaka-newsies.webp" popovertarget="art-pop-2019/kuroaka-newsies.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/kuroaka-newsies.webp">
+  <img src="/assets/art/2019/kuroaka-newsies.webp" loading="lazy">
+  <p>shinsoku ikkon but as a cheesy 50s romance comic</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/shinsoku-flowerstand-chibi.webp" popovertarget="art-pop-2019/shinsoku-flowerstand-chibi.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-flowerstand-chibi.webp">
+  <img src="/assets/art/2019/shinsoku-flowerstand-chibi.webp" loading="lazy"><br><img src="/assets/art/2019/legenders-flowerstand-chibi.webp" loading="lazy"><br><img src="/assets/art/2019/sem-flowerstand-chibi.webp" loading="lazy"><br><img src="/assets/art/2019/flags-flowerstand-chibi.webp" loading="lazy"><br>
+  <p>illustrations for the sideM 3rd international flowerstand</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/shinsoku-study-1.webp" popovertarget="art-pop-2019/shinsoku-study-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-study-1.webp">
+  <img src="/assets/art/2019/shinsoku-study-1.webp" loading="lazy"><br><img src="/assets/art/2019/shinsoku-study-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/suzaku-birthday-1.webp" popovertarget="art-pop-2019/suzaku-birthday-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/suzaku-birthday-1.webp">
+  <img src="/assets/art/2019/suzaku-birthday-1.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-2.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-3.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-4.webp" loading="lazy"><br>
+  <p>suzaku birthday art 2019</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/karkat-sollux.webp" popovertarget="art-pop-2019/karkat-sollux.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/karkat-sollux.webp">
+  <img src="/assets/art/2019/karkat-sollux.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">homestuck</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/loki-fenrir-comm.webp" popovertarget="art-pop-2019/loki-fenrir-comm.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/loki-fenrir-comm.webp">
+  <img src="/assets/art/2019/loki-fenrir-comm.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/spiderman-2099-love.webp" popovertarget="art-pop-2019/spiderman-2099-love.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/spiderman-2099-love.webp">
+  <img src="/assets/art/2019/spiderman-2099-love.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">miguel o&#39;hara</div><div class="art-pop-tab">marvel</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/shinsoku-sun-moon.webp" popovertarget="art-pop-2019/shinsoku-sun-moon.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-sun-moon.webp">
+  <img src="/assets/art/2019/shinsoku-sun-moon.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/foreheads-sunburn.webp" popovertarget="art-pop-2019/foreheads-sunburn.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/foreheads-sunburn.webp">
+  <img src="/assets/art/2019/foreheads-sunburn.webp" loading="lazy"><br><img src="/assets/art/2019/foreheads-code-lyoko.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/kuroaka-cafe.webp" popovertarget="art-pop-2019/kuroaka-cafe.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/kuroaka-cafe.webp">
+  <img src="/assets/art/2019/kuroaka-cafe.webp" loading="lazy">
+  <p>commission for @315pro</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/suzaku-tenka-meeting.webp" popovertarget="art-pop-2019/suzaku-tenka-meeting.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/suzaku-tenka-meeting.webp">
+  <img src="/assets/art/2019/suzaku-tenka-meeting.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">tenka osaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/genbu-sakuya-1.webp" popovertarget="art-pop-2019/genbu-sakuya-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/genbu-sakuya-1.webp">
+  <img src="/assets/art/2019/genbu-sakuya-1.webp" loading="lazy"><br><img src="/assets/art/2019/genbu-sakuya-2.webp" loading="lazy"><br><img src="/assets/art/2019/genbu-sakuya-3.webp" loading="lazy"><br>
+  <p>genbu reminds me of sakuya (shiny colors) but instead of talking to cute girls at school he scolds yankee for not doing their homework lol</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2019/genbu-emo-1.webp" popovertarget="art-pop-2019/genbu-emo-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/genbu-emo-1.webp">
+  <img src="/assets/art/2019/genbu-emo-1.webp" loading="lazy"><br><img src="/assets/art/2019/genbu-emo-2.webp" loading="lazy"><br>
+  <p>well i'm self-aware if nothing else</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/suzaku-ren-race.webp" popovertarget="art-pop-2018/suzaku-ren-race.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/suzaku-ren-race.webp">
+  <img src="/assets/art/2018/suzaku-ren-race.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">ren kizaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/suzaku-makio-cake.webp" popovertarget="art-pop-2018/suzaku-makio-cake.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/suzaku-makio-cake.webp">
+  <img src="/assets/art/2018/suzaku-makio-cake.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">makio uzuki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/michiru-ren-ramen.webp" popovertarget="art-pop-2018/michiru-ren-ramen.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/michiru-ren-ramen.webp">
+  <img src="/assets/art/2018/michiru-ren-ramen.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">michiru enjoji</div><div class="art-pop-tab">ren kizaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/kuroaka-genderbend-1.webp" popovertarget="art-pop-2018/kuroaka-genderbend-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/kuroaka-genderbend-1.webp">
+  <img src="/assets/art/2018/kuroaka-genderbend-1.webp" loading="lazy"><br><img src="/assets/art/2018/kuroaka-genderbend-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/shinsoku-sky.webp" popovertarget="art-pop-2018/shinsoku-sky.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/shinsoku-sky.webp">
+  <img src="/assets/art/2018/shinsoku-sky.webp" loading="lazy"><br><img src="/assets/art/2018/shinsoku-sky-process.webp" loading="lazy"><br>
+  <p>星​空との出会い</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/foreheads-mafia.webp" popovertarget="art-pop-2018/foreheads-mafia.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/foreheads-mafia.webp">
+  <img src="/assets/art/2018/foreheads-mafia.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/altessimo-snowman-1.webp" popovertarget="art-pop-2018/altessimo-snowman-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/altessimo-snowman-1.webp">
+  <img src="/assets/art/2018/altessimo-snowman-1.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-2.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-3.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-4.webp" loading="lazy"><br>
+  <p>sidem santa 2018 comic for @spacethymes me when i'm in a drawing comics that reference obscure untranslated sideM events competition and my opponent is andrew</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">rei kagura</div><div class="art-pop-tab">kei tsuzuki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/rui-kahoot.webp" popovertarget="art-pop-2018/rui-kahoot.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/rui-kahoot.webp">
+  <img src="/assets/art/2018/rui-kahoot.webp" loading="lazy">
+  <p>this is what happened when an english teacher substituted in my maths class for four weeks. btw he was a trophy husband and i think he should have gotten tested for ADHD in retrospect</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">rui maita</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/kuroaka-hug.webp" popovertarget="art-pop-2018/kuroaka-hug.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/kuroaka-hug.webp">
+  <img src="/assets/art/2018/kuroaka-hug.webp" loading="lazy">
+  <p>request: よかったら朱玄をお願いします！ </p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/genbu-young-emo.webp" popovertarget="art-pop-2018/genbu-young-emo.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/genbu-young-emo.webp">
+  <img src="/assets/art/2018/genbu-young-emo.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/amana-sunset.webp" popovertarget="art-pop-2018/amana-sunset.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/amana-sunset.webp">
+  <img src="/assets/art/2018/amana-sunset.webp" loading="lazy">
+  <p>amanachan!</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">amana osaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/foreheads-rio-sr.webp" popovertarget="art-pop-2018/foreheads-rio-sr.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/foreheads-rio-sr.webp">
+  <img src="/assets/art/2018/foreheads-rio-sr.webp" loading="lazy"><br><img src="/assets/art/2018/foreheads-rio-sr-process.webp" loading="lazy"><br>
+  <p>恋の病は、家庭の医学に載ってない！</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/suzaku-saki-devils.webp" popovertarget="art-pop-2018/suzaku-saki-devils.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/suzaku-saki-devils.webp">
+  <img src="/assets/art/2018/suzaku-saki-devils.webp" loading="lazy">
+  <p>the lyrics are from the shitty rap song eminem did for venom</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">saki mizushima</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/suzaku-kitty.webp" popovertarget="art-pop-2018/suzaku-kitty.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/suzaku-kitty.webp">
+  <img src="/assets/art/2018/suzaku-kitty.webp" loading="lazy"><br><img src="/assets/art/2018/seiji-puppy.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">seiji shingen</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/anchovy-1.webp" popovertarget="art-pop-2018/anchovy-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/anchovy-1.webp">
+  <img src="/assets/art/2018/anchovy-1.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-2.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-3.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-4.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-5.webp" loading="lazy"><br>
+  <p>schoolwork</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/shinsoku-neon.webp" popovertarget="art-pop-2018/shinsoku-neon.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/shinsoku-neon.webp">
+  <img src="/assets/art/2018/shinsoku-neon.webp" loading="lazy"><br><img src="/assets/art/2018/suzaku glasses.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/kuroaka-furry.webp" popovertarget="art-pop-2018/kuroaka-furry.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/kuroaka-furry.webp">
+  <img src="/assets/art/2018/kuroaka-furry.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/touma-moon.webp" popovertarget="art-pop-2018/touma-moon.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/touma-moon.webp">
+  <img src="/assets/art/2018/touma-moon.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">touma amagase</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+                <input type="image" src="/assets/art/thumb/2018/nana-oh-no.webp" popovertarget="art-pop-2018/nana-oh-no.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/nana-oh-no.webp">
+  <img src="/assets/art/2018/nana-oh-no.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">nana abe</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+
+     
+        
+            
+    
+</div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+
+    
+    
+
+
+</body>
+</html>

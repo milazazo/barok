@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+    <title>Global Game Jam 2026 devlog </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box desktop-only">
+    <a href="/" class="title">username</a>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</div>
+<a href="/" class="title mobile-only">username</a>
+<details class="nav-box mobile-only">
+    <summary class="nav-menu-button"></summary>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</details>
+    </header>
+
+    <main>
+        <h1>Global Game Jam 2026 devlog</h1>
+        2026-02-05
+        <p>For this year's <a href="https://globalgamejam.org/">Global Game Jam</a>, with the theme of masks, I developed <strong><a href="https://chopsdev.itch.io/mummers-mayhem">Mummers Mayhem</a></strong> with <a href="https://chopsdev.itch.io/">ChopsDev</a> and <a href="https://glitch-doctor.itch.io/">Glitch Doctor</a>. I'm pretty happy with what we achieved in 48 hours!</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/art/mummers_mayhem_title.jpg" alt=""></p>
+<blockquote>
+<p>The festivities never stop in this hand-drawn medieval minigame collection. Play as a mummer as you serve up a feast, show off your dance skills, and 'convince' people to join in the fun. You'll need to be fast to keep your party together. How high can you score?</p>
+</blockquote>
+<p>It was my first time jamming with anyone aside from my university friends. Imagine my surprise when I found out the programmers who responded to my &quot;looking for a group&quot; post were a couple of YouTube Shorts guys. ChopsDev in particular is the most extroverted person I have ever met. They were both very nice and easy to work with.</p>
+<h2>Friday</h2>
+<p>When I saw the theme, I instantly wanted to do something based on mummers, which were, in medieval times, people who would dress in fancy animals costumes and party hard during festivals. Actually, they still exist today if you just go to Scotland or Pennsylvania.</p>
+<p>The programmers had a minigame framework in place, so we went for Warioware-type fare. We made up the games as we went, loosely basing them on concepts mentioned on the <a href="https://en.Wikipedia.Org/wiki/mummers">Wikipedia page</a>:</p>
+<ul>
+<li><strong>Mask them:</strong> Get other people to join in the fun and party! It turned into a cultish minigame for some reason.</li>
+<li><strong>Run to the tree:</strong> This was supposed to be orchard-wassailing, but the guy who playtested it had no idea what &quot;Sing to the tree&quot; was supposed to be and we never changed the text after adding in the graphics.</li>
+<li><strong>Serve the food:</strong> Self-explanatory.</li>
+<li><strong>Dance:</strong> Self-explanatory.</li>
+</ul>
+<p>For this game jam, I put a lot of effort into 2D animation in Procreate. While not my forte, the art style meant I didn't have to be too precise about it. Unfortunately I'm used to working with full-screen resolutions and created my animations without considering the tiny default screen size we were working with.</p>
+<div style="text-align:center"><img src="https://file.garden/aTfQE1754gctZTxl/art/mummers_mayhem_wolf_animation.GIF"></div>
+<h2>Saturday</h2>
+<p>As mentioned before, the programmers were YouTube guys so I had the absolutely original experience of participating in a Shorts video with Chops while Glitch was at home.</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/art/youtube_shorts.jpg" alt=""></p>
+<p>I worked on more animations and art stuff. UI is <em>so</em> much easier in Godot than in Unity it's crazy. You can pick up the concept of themes much quicker and they're extremely easy to apply in the editor. Nine Panel Rect and Style Texture Boxes are a lifesaver (though  in retrospect, I wish I had replaced my placeholder texture with something more interesting).</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/screenshots/mummers_mayhem_theme.jpg" alt=""></p>
+<blockquote>
+<p>Within the Theme editor (which you can think of like a single stylesheet), you can add UI Types (elements) and then edit values such as font color, size, and stylebox. Then, you can drag and drop the Theme into your UI container, and it'll automatically apply to all UI elements underneath it.</p>
+</blockquote>
+<p>I want to look into coding more next time—I've heard that working in Godot is pretty similar to webdev, so I should be able to...?</p>
+<p>I chugged a 500ml can of energy drink and worked on the project for 12 hours straight without sleeping which is something I haven't done in over a year at this point. The massive energy crash I had on Monday meant I had to take the day off, so that's probably why.</p>
+<p>When I finally left the game jam site at 11 PM, I ran into a group of very beautiful women who invited me to go to a bar.</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/art/bar_gig.jpg" alt=""></p>
+<h2>Sunday</h2>
+<p>The only free photo editing software the game jam site had was Krita, which was seriously a pain in the bitchass to use. I didn't want to work at home earlier because I didn't have Godot installed and thought it would take 2478932 years like Unity, but it downloaded in 30 seconds and I got it running in 30 more. <strong>Godot is peak.</strong></p>
+<p>So I did some more UI stuff on Clip Studio Paint, which was much easier on my mind. I did try making a custom bitmap font with <a href="https://renderhjs.net/shoebox/">ShoeBox</a>, but it didn't work out so I just ended up messing with the font color/shadow/outline opacities instead.</p>
+<p>I went back to the jam site and completed some more animations, then put them in the game. It was finally coming to life!</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/art/mummers_mayhem_dragon_spritesheet.jpg" alt="">
+<img src="https://file.garden/aTfQE1754gctZTxl/art/mummers_mayhem_dance.gif" alt=""></p>
+<p>I quickly added some foliage to the masking levels by placing AnimatedSprite2D elements. Each frame was a different tree or bush and whatnot so by setting the frames, I could include more content without having to upload multiple images.</p>
+<p><img src="https://file.garden/aTfQE1754gctZTxl/screenshots/mummers_mayhem_trees.jpg" alt=""></p>
+<p>By the final half-hour we were solidly sorted with a proper video game and presented it to the class.</p>
+<p>I'm very proud of what we achieved in such a short time! Doing a game jam with actual programmers is a totally different experience. It was my first time drawing in a medieval manuscript style, doing a lot of 2d animation, and using Godot too, and I think I achieved these well overall. The game itself is very replayable so I'm forcing all of my friends to try it.</p>
+<h2>Next time</h2>
+<p>Well the thing about the minigame set up is that we made four games in one so I may have overscoped myself.</p>
+<p>I think I didn't push the theming far enough, so the concept was unclear and some of the levels looked quite bland. I added trees to the masking minigame last-minute which instantly made the visuals way better and I would have liked to have added those background finishing touches with more of the other levels too. My initial focus was more on the decorative aspects of a manuscript rather than figurative, but that didn't pan out too well.</p>
+<p>Image scaling was also a big issue. Always make mockups early on. Also I didn't implement the animations correctly or make the characters opaque enough.</p>
+<p>But for a game made in 48 hours, I'm very happy with it. <strong><a href="https://chopsdev.itch.io/mummers-mayhem">Play it on your web browser on itch.io here!</a></strong></p>
+<h2>Frequently asked questions</h2>
+<p><strong>Q. Did you make this post just so you could brag about some random girls inviting you to a gig?</strong></p>
+<p>A. Yes</p>
+
+            
+                
+            
+                
+                    <a href="/log/2026">2026</a>
+                
+            
+                
+                    <a href="/log/2d"> 2D</a>
+                
+            
+                
+                    <a href="/log/art"> art</a>
+                
+            
+                
+                    <a href="/log/comic"> comic</a>
+                
+            
+                
+                    <a href="/log/gamedev"> gamedev</a>
+                
+            
+                
+                    <a href="/log/process"> process</a>
+                
+            
+                
+                    <a href="/log/report"> report</a>
+                
+            
+
+    </main>
+
+    <footer>
+    </footer>
+
+
+    
+    
+
+
+</body>
+</html>

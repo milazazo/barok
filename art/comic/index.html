@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+    <title>art tagged comic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .art-list{
+            display: flex;
+            gap: 0.8em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        .art-list input{
+        width: 100px;
+        height: 100px;
+        object-fit: cover; 
+        background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-box desktop-only">
+    <a href="/" class="title">username</a>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</div>
+<a href="/" class="title mobile-only">username</a>
+<details class="nav-box mobile-only">
+    <summary class="nav-menu-button"></summary>
+    <br>
+    <a href="/log" class="nav-heading">log</a>
+    <nav class="nav-list">
+        <a href="/log/recap">recap</a>
+        <a href="/log/report">report</a>
+        <a href="/log/rant">rant</a>
+        <a href="/log/review">review</a>
+        <a href="/log/reference">reference</a>
+    </nav>
+    <a href="/art" class="nav-heading">art</a>
+    <nav class="nav-list">
+        <a href="/art/illust">illust</a>
+        <a href="/art/comic">comic</a>
+        <a href="/art/goods">goods</a>
+    </nav>
+    <div class="nav-heading">sitely</div>
+    <nav class="nav-list">
+        <a href="/log">about</a>
+        <a href="/log">links</a>
+        <a href="/log">contact</a>
+        <a href="/log">mailing list</a>
+        <a href="/log">rss feed</a>
+        <a href="/log">youtube</a>
+    </nav>
+</details>
+    </header>
+    <main>
+        <h1>art tagged comic</h1>
+        <p></p>
+        <div id="side" class="nav-box">
+    <button class="nav-heading" popovertarget="tag-year">year</button>
+    <nav id="tag-year" popover class="side-pop nav-list">
+        
+            <a href="/art/2026">2026</a>
+            
+        
+            <a href="/art/2025">2025</a>
+            
+        
+            <a href="/art/2024">2024</a>
+            
+        
+            <a href="/art/2023">2023</a>
+            
+        
+            <a href="/art/2022">2022</a>
+            
+        
+            <a href="/art/2021">2021</a>
+            
+        
+            <a href="/art/2020">2020</a>
+            
+        
+            <a href="/art/2019">2019</a>
+            
+        
+            <a href="/art/2018">2018</a>
+            
+        
+            <a href="/art/2017">2017</a>
+            
+        
+            <a href="/art/2016">2016</a>
+            
+        
+            <a href="/art/2015">2015</a>
+            
+        
+            <a href="/art/2014">2014</a>
+            
+        
+            <a href="/art/2013">2013</a>
+            
+        
+            <a href="/art/2012">2012</a>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </nav>
+    <button class="nav-heading" popovertarget="tag-series">series</button>
+    <nav id="tag-series" popover class="side-pop nav-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <a href="/art/original">original</a>
+            
+        
+            <a href="/art/idolmaster">idolmaster</a>
+            
+        
+            <a href="/art/love-live">love live</a>
+            
+        
+            <a href="/art/ace-attorney">ace attorney</a>
+            
+        
+            <a href="/art/zero-escape">zero escape</a>
+            
+        
+            <a href="/art/kof">kof</a>
+            
+        
+            <a href="/art/dc">dc</a>
+            
+        
+            <a href="/art/marvel">marvel</a>
+            
+        
+            <a href="/art/jjba">jjba</a>
+            
+        
+            <a href="/art/one-piece">one piece</a>
+            
+        
+            <a href="/art/oresama-teacher">oresama teacher</a>
+            
+        
+            <a href="/art/homestuck">homestuck</a>
+            
+        
+            <a href="/art/pro-wrestling">pro wrestling</a>
+            
+        
+            <a href="/art/yakuza">yakuza</a>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </nav>
+    <button class="nav-heading" popovertarget="tag-character">character</button>
+    <nav id="tag-character" popover class="side-pop nav-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <a href="/art/genbu-kurono">genbu kurono</a>
+            
+        
+            <a href="/art/suzaku-akai">suzaku akai</a>
+            
+        
+            <a href="/art/hokuto-ijuuin">hokuto ijuuin</a>
+            
+        
+            <a href="/art/amehiko-kuzunoha">amehiko kuzunoha</a>
+            
+        
+            <a href="/art/simon-blackquill">simon blackquill</a>
+            
+        
+            <a href="/art/bronco-knight">bronco knight</a>
+            
+        
+            <a href="/art/barok-van-zieks">barok van zieks</a>
+            
+        
+            <a href="/art/amana-osaki">amana osaki</a>
+            
+        
+    </nav>
+
+</div>
+<div class="art-list">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2025/acupuncture_supervisor.webp" popovertarget="art-pop-2025/acupuncture_supervisor.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2025/acupuncture_supervisor.webp">
+  <img src="/assets/art/2025/acupuncture_supervisor.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2025</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+    <input type="image" src="/assets/art/thumb/2025/contact_lens.webp" popovertarget="art-pop-2025/contact_lens.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2025/contact_lens.webp">
+  <img src="/assets/art/2025/contact_lens.webp" loading="lazy"><br><img src="/assets/art/2025/contact_lens_office.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2025</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/2024/tgaai-1.webp" popovertarget="art-pop-2024/tgaai-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2024/tgaai-1.webp">
+  <img src="/assets/art/2024/tgaai-1.webp" loading="lazy"><br><img src="/assets/art/2024/tgaai-2.webp" loading="lazy"><br><img src="/assets/art/2024/tgaai-3.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2024</div></a><div class="art-pop-tab">barok van zieks</div><div class="art-pop-tab">kazuma asogi</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2023/barok-lgbt-1.webp" popovertarget="art-pop-2023/barok-lgbt-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2023/barok-lgbt-1.webp">
+  <img src="/assets/art/2023/barok-lgbt-1.webp" loading="lazy"><br><img src="/assets/art/2023/barok-lgbt-2.webp" loading="lazy"><br><img src="/assets/art/2023/dgs-oscar-wilde.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2023</div></a><div class="art-pop-tab">barok van zieks</div><div class="art-pop-tab">andy</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2023/barok-body-pillow-1.webp" popovertarget="art-pop-2023/barok-body-pillow-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2023/barok-body-pillow-1.webp">
+  <img src="/assets/art/2023/barok-body-pillow-1.webp" loading="lazy"><br><img src="/assets/art/2023/barok-body-pillow-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2023</div></a><div class="art-pop-tab">barok van zieks</div><div class="art-pop-tab">kazuma asogi</div><div class="art-pop-tab">ryunosuke naruhodo</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    <input type="image" src="/assets/art/thumb/2023/air-fryer-1.webp" popovertarget="art-pop-2023/air-fryer-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2023/air-fryer-1.webp">
+  <img src="/assets/art/2023/air-fryer-1.webp" loading="lazy"><br><img src="/assets/art/2023/air-fryer-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2023</div></a><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    <input type="image" src="/assets/art/thumb/2022/feast-1.webp" popovertarget="art-pop-2022/feast-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/feast-1.webp">
+  <img src="/assets/art/2022/feast-1.webp" loading="lazy"><br><img src="/assets/art/2022/feast-2.webp" loading="lazy"><br>
+  <p>comic for FEAST zine</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">one piece</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2022/aa-first-meeting.webp" popovertarget="art-pop-2022/aa-first-meeting.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/aa-first-meeting.webp">
+  <img src="/assets/art/2022/aa-first-meeting.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2022/kay-keys.webp" popovertarget="art-pop-2022/kay-keys.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/kay-keys.webp">
+  <img src="/assets/art/2022/kay-keys.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    <input type="image" src="/assets/art/2022/manosouta-smoke.webp" popovertarget="art-pop-2022/manosouta-smoke.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/manosouta-smoke.webp">
+  <img src="/assets/art/2022/manosouta-smoke.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-malborough.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-mcr.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-kiss.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    <input type="image" src="/assets/art/thumb/2022/enstars-oc.webp" popovertarget="art-pop-2022/enstars-oc.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/enstars-oc.webp">
+  <img src="/assets/art/2022/enstars-oc.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">enstars</div>
+  </div></div>
+    
+    
+    <input type="image" src="/assets/art/2022/kashiwagi-soba.webp" popovertarget="art-pop-2022/kashiwagi-soba.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/kashiwagi-soba.webp">
+  <img src="/assets/art/2022/kashiwagi-soba.webp" loading="lazy">
+  <p>for a yakuza zine</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">yakuza</div>
+  </div></div>
+    
+    <input type="image" src="/assets/art/thumb/2022/ryo-kei-1.webp" popovertarget="art-pop-2022/ryo-kei-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2022/ryo-kei-1.webp">
+  <img src="/assets/art/2022/ryo-kei-1.webp" loading="lazy"><br><img src="/assets/art/2022/ryo-kei-2.webp" loading="lazy"><br><img src="/assets/art/2022/ryo-kei-3.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    <input type="image" src="/assets/art/thumb/2021/natsuharu-1.webp" popovertarget="art-pop-2021/natsuharu-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2021/natsuharu-1.webp">
+  <img src="/assets/art/2021/natsuharu-1.webp" loading="lazy"><br><img src="/assets/art/2021/natsuharu-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2021</div></a><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    <input type="image" src="/assets/art/thumb/2021/eru-amehiko-1.webp" popovertarget="art-pop-2021/eru-amehiko-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2021/eru-amehiko-1.webp">
+  <img src="/assets/art/2021/eru-amehiko-1.webp" loading="lazy"><br><img src="/assets/art/2021/eru-amehiko-2.webp" loading="lazy"><br>
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2021</div></a><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">eru shiraishi</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2020/edgeworth-franziska-gay.webp" popovertarget="art-pop-2020/edgeworth-franziska-gay.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2020/edgeworth-franziska-gay.webp">
+  <img src="/assets/art/2020/edgeworth-franziska-gay.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">miles edgeworth</div><div class="art-pop-tab">franziska von karma</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2020/blackquills-1.webp" popovertarget="art-pop-2020/blackquills-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2020/blackquills-1.webp">
+  <img src="/assets/art/2020/blackquills-1.webp" loading="lazy"><br><img src="/assets/art/2020/blackquills-2.webp" loading="lazy"><br>
+  <p>headcanon that the blackquills are 1st-gen japanese immigrants to japanifornia. aura doesn't speak japanese, and simon used to when he was a kid but forgot it while he was in prison (based on my own relationship with my sister)</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2020/suzaku-fired.webp" popovertarget="art-pop-2020/suzaku-fired.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2020/suzaku-fired.webp">
+  <img src="/assets/art/2020/suzaku-fired.webp" loading="lazy">
+  <p>this is why shinsoku hasn't had an event in seven months</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2019/shinsoku-yankee.webp" popovertarget="art-pop-2019/shinsoku-yankee.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-yankee.webp">
+  <img src="/assets/art/2019/shinsoku-yankee.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2019/white-angel.webp" popovertarget="art-pop-2019/white-angel.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/white-angel.webp">
+  <img src="/assets/art/2019/white-angel.webp" loading="lazy">
+  <p>the good lord keeps sending me white angels and i don't want them</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2019/kuroaka-newsies.webp" popovertarget="art-pop-2019/kuroaka-newsies.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/kuroaka-newsies.webp">
+  <img src="/assets/art/2019/kuroaka-newsies.webp" loading="lazy">
+  <p>shinsoku ikkon but as a cheesy 50s romance comic</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    <input type="image" src="/assets/art/thumb/2019/suzaku-birthday-1.webp" popovertarget="art-pop-2019/suzaku-birthday-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/suzaku-birthday-1.webp">
+  <img src="/assets/art/2019/suzaku-birthday-1.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-2.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-3.webp" loading="lazy"><br><img src="/assets/art/2019/suzaku-birthday-4.webp" loading="lazy"><br>
+  <p>suzaku birthday art 2019</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2019/suzaku-tenka-meeting.webp" popovertarget="art-pop-2019/suzaku-tenka-meeting.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/suzaku-tenka-meeting.webp">
+  <img src="/assets/art/2019/suzaku-tenka-meeting.webp" loading="lazy">
+  
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">tenka osaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    <input type="image" src="/assets/art/thumb/2019/genbu-emo-1.webp" popovertarget="art-pop-2019/genbu-emo-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2019/genbu-emo-1.webp">
+  <img src="/assets/art/2019/genbu-emo-1.webp" loading="lazy"><br><img src="/assets/art/2019/genbu-emo-2.webp" loading="lazy"><br>
+  <p>well i'm self-aware if nothing else</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2018/altessimo-snowman-1.webp" popovertarget="art-pop-2018/altessimo-snowman-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/altessimo-snowman-1.webp">
+  <img src="/assets/art/2018/altessimo-snowman-1.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-2.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-3.webp" loading="lazy"><br><img src="/assets/art/2018/altessimo-snowman-4.webp" loading="lazy"><br>
+  <p>sidem santa 2018 comic for @spacethymes me when i'm in a drawing comics that reference obscure untranslated sideM events competition and my opponent is andrew</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">rei kagura</div><div class="art-pop-tab">kei tsuzuki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    <input type="image" src="/assets/art/thumb/2018/rui-kahoot.webp" popovertarget="art-pop-2018/rui-kahoot.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/rui-kahoot.webp">
+  <img src="/assets/art/2018/rui-kahoot.webp" loading="lazy">
+  <p>this is what happened when an english teacher substituted in my maths class for four weeks. btw he was a trophy husband and i think he should have gotten tested for ADHD in retrospect</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">rui maita</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    <input type="image" src="/assets/art/thumb/2018/anchovy-1.webp" popovertarget="art-pop-2018/anchovy-1.webp" value="" />
+<div popover="auto" class="art-pop" id="art-pop-2018/anchovy-1.webp">
+  <img src="/assets/art/2018/anchovy-1.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-2.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-3.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-4.webp" loading="lazy"><br><img src="/assets/art/2018/anchovy-5.webp" loading="lazy"><br>
+  <p>schoolwork</p>
+  <div class="art-pop-bar"><div class="art-pop-tab">2018</div></a><div class="art-pop-tab">original</div>
+  </div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+
+    
+    
+
+
+</body>
+</html>
