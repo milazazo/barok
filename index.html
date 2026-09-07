@@ -7,13 +7,185 @@
     <title>the dog den</title>
     <link rel="stylesheet" href="/css/style.css">
     <style>
-.log p,.log:hover{color:var(--text-color)}.log-newest-inner,.scroll-box{overflow-y:scroll}.intro-box,.log:hover,.sitely a{background-color:var(--white-color)}.blog-card p,.log p{font-size:.8em}.parent{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.log-newest-inner{height:320px}.log-newest-title{line-height:2px;font-size:1.2em;font-weight:700;margin-top:1em}.little-link,.little-link:hover{float:right;color:var(--background-color);font-weight:200;transition:var(--transition-time)}.art input{height:200px;width:32.7%;object-fit:cover}.art a:hover,a{border-bottom:none}.sitely a{display:block;padding:.3em;border:1px solid;margin-bottom:.2em}.no-scroll{overflow-y:hidden}.intro-box{padding:1.5em}.header-bar{background-color:var(--accent-color);color:var(--background-color);padding:.2em 1em;font-size:1em;letter-spacing:2px;margin-top:1em;margin-bottom:.5em}.little-link:hover{letter-spacing:4px}h2::before{content:none}.blog-card-title{letter-spacing:0}.blog-card-byline{display:none}@media only screen and (min-width:1280px){.art,.now,.sitely{grid-row-start:2}body{overflow-y:hidden}.log{grid-column:span 2/span 2;height:320px}.art,.log2{grid-column:span 3/span 3}.log2{grid-column-start:3}.now{grid-column-start:4}.sitely{grid-column-start:5;text-align:justify}.intro{height:100px;width:66%}}@media only screen and (max-width:1280px){.art,.log2{grid-column:span 5/span 5;grid-column-start:1}.log{grid-column:span 5/span 5}.log2{grid-row-start:2}.art{grid-row-start:3}.now,.sitely{grid-row-start:4}.now{grid-column:span 3/span 3}.sitely{grid-column:span 2/span 2;grid-column-start:4}}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.log:hover{
+    background-color: var(--white-color);
+    color:var(--text-color);
+}
+
+.log-newest-inner{
+    height:320px;
+    overflow-y:scroll;
+}
+
+.log-newest-title {
+    line-height: 2px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.log p{
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+
+.art input{
+    height:200px;
+    width:32.7%;
+    object-fit: cover;
+}
+
+.art a:hover{
+    border-bottom: none;
+}
+
+.sitely a{
+    display: block;
+    background-color: var(--white-color);
+    padding: 0.3em;
+    border: 1px solid;
+    margin-bottom: 0.2em;
+}
+
+.scroll-box{
+    overflow-y:scroll;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+            
+.intro-box{
+    background-color: var(--white-color);
+    padding: 1.5em;
+}
+
+.header-bar{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 0.2em 1em 0.2em 1em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.little-link{
+    float:right;
+    color:var(--background-color);
+    font-weight: 200;
+        transition: var(--transition-time);
+}
+
+.little-link:hover{
+    float:right;
+    color:var(--background-color);
+    font-weight: 200;
+    letter-spacing: 4px;
+    transition: var(--transition-time);
+}
+
+h2::before{
+    content:none;
+}
+
+.blog-card-title{
+    letter-spacing: 0px;
+}
+
+.blog-card p{
+    font-size: 0.8em;
+}
+
+.blog-card-byline{
+    display: none;
+}
+
+a{
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 1280px) {
+
+        body{
+    overflow-y: hidden;
+    }
+
+    .log {
+        grid-column: span 2 / span 2;
+        height:320px;
+    }
+
+    .log2 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 3;
+    }
+
+    .art {
+        grid-column: span 3 / span 3;
+        grid-row-start: 2;
+    }
+
+    .now {
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .sitely {
+        grid-column-start: 5;
+        grid-row-start: 2;
+        text-align: justify;
+    }
+
+    .intro{
+     height:100px;
+     width:66%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+.log {
+    grid-column: span 5 / span 5;
+}
+
+.log2 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.art {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.now {
+    grid-column: span 3 / span 3;
+    grid-row-start: 4;
+}
+
+.sitely {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+}
     </style>
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -39,10 +211,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -66,12 +237,12 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
 
     <main>
         <div class="intro">
-    <p class="intro-box">my introduction goes here :) YIPPEEEEEEEEEEEEEEEEEE!</p>
+    <p class="intro-box">g'day, i'm dre. corporate salaryman from aotearoa ranting about art, writing, and local pro wrestling. i'm a dog.</p>
 </div>
 
 <div class="header-bar">latest post <a href="/log" class="little-link">all log posts ▶</a></div>
@@ -93,1479 +264,70 @@
 </a>
         
         
-        <div class="blog-list">
-     
-        
-            
-    
-
-     
-        
-            
-                <a href="/log/tsuyoshi-kusano-atsushi-nishigori-tokyo-pop-guide-interview/" class="blog-card">
+        <div class="blog-list">  <a href="/log/tsuyoshi-kusano-atsushi-nishigori-tokyo-pop-guide-interview/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/tsuyoshi-kusano-atsushi-nishigori-tokyo-pop-guide-interview.webp" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">Tsuyoshi Kusano &amp; Atsushi Nishigori Tokyo Pop Guide interview</div>
         <p>In 2016, the IOEA and JMAG published Tokyo Pop Guide, a 108-page guide to travelling in Japan for English-speaking otaku.</p>
         <div class="blog-card-byline">2026-08-20⠀⠀2332 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/in-the-scene/" class="blog-card">
+</a> <a href="/log/in-the-scene/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">In the scene</div>
         <p>Went to The Button Factory to watch Meaning 1, a performance art show hosted by Sandy Loam.</p>
         <div class="blog-card-byline">2026-08-16⠀⠀3053 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/monthly-recap-july-2026/" class="blog-card">
+</a> <a href="/log/monthly-recap-july-2026/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/monthly_recap_july_2026.webp" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">Monthly recap (July 2026)</div>
         <p>Well I ended up writing way more than usual after I said all that shit about wanting to take a break.</p>
         <div class="blog-card-byline">2026-08-07⠀⠀1716 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/auckland-zinefest-2026-report/" class="blog-card">
+</a> <a href="/log/auckland-zinefest-2026-report/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/auckland_zinefest_2026_report.webp" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">Auckland Zinefest 2026 report</div>
         <p>Tabled at Auckland Zinefest on Sunday. Boys, we are so back.</p>
         <div class="blog-card-byline">2026-08-05⠀⠀4673 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/zodiac-buddies-risoprint-process/" class="blog-card">
+</a> <a href="/log/zodiac-buddies-risoprint-process/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/zodiac-buddies-risoprint-process.webp" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">Zodiac buddies risoprint process</div>
         <p>Process for a zodiac animal 4x6 risoprint that I sold at Auckland Zinefest last weekend.</p>
         <div class="blog-card-byline">2026-08-04⠀⠀940 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/if-all-you-care-about-is-praise/" class="blog-card">
+</a> <a href="/log/if-all-you-care-about-is-praise/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/if_all_you_care_about_is_praise.webp" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">If all you care about is praise, just pick up litter around town</div>
         <p>Me and Roboco critical analysis.</p>
         <div class="blog-card-byline">2026-07-31⠀⠀1333 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-</div>
-
-
+</a>                                                                                </div>
     </div>
 
     <div class="art"><div class="header-bar">latest art <a href="/art" class="little-link">all artwork ▶</a></div>
         <div class="scroll-box no-scroll" style="height:200px">
         
-        <div class="art-list">
-    
-    <input type="image" src="/assets/art/2026/overload-2026-art-competition.webp" popovertarget="art-pop-2026/overload-2026-art-competition.webp" value="" />
+        <div class="art-list"><input type="image" src="/assets/art/2026/overload-2026-art-competition.webp" popovertarget="art-pop-2026/overload-2026-art-competition.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2026/overload-2026-art-competition.webp">
   <img src="/assets/art/2026/overload-2026-art-competition.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-
-    
-    <input type="image" src="/assets/art/2026/pro_wrestling_sketches.webp" popovertarget="art-pop-2026/pro_wrestling_sketches.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div><div class="art-pop-tab">original</div>
+  </div></div><input type="image" src="/assets/art/2026/pro_wrestling_sketches.webp" popovertarget="art-pop-2026/pro_wrestling_sketches.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2026/pro_wrestling_sketches.webp">
   <img src="/assets/art/2026/pro_wrestling_sketches.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">pro wrestling</div>
-  </div></div>
-
-    
-    <input type="image" src="/assets/art/2026/bundabear.webp" popovertarget="art-pop-2026/bundabear.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div><div class="art-pop-tab">pro wrestling</div>
+  </div></div><input type="image" src="/assets/art/2026/bundabear.webp" popovertarget="art-pop-2026/bundabear.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2026/bundabear.webp">
   <img src="/assets/art/2026/bundabear.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div><div class="art-pop-tab">original</div>
+  </div></div></div>
 
         </div>
     </div>
@@ -1574,7 +336,6 @@
         <div class="header-bar">updates</div>
         <div style="font-size:small">we have updated the website at last. YAYY! idk what else to write here</div>
     </div>
-
         <div class="sitely">
         <div class="header-bar">contact</div>
         <img src="https://file.garden/aTfQE1754gctZTxl/buttons/wulfpaper_banner.png">

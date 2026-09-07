@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -36,10 +36,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -63,15 +62,15 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
 
     <main>
         <h1>log</h1>
 
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
         
         
@@ -113,7 +112,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-type">type</button>
-    <nav id="tag-type" popover class="side-pop nav-list">
+    <nav id="tag-type" popover class="drop-pop nav-list">
         
         
         
@@ -159,7 +158,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-topic">topic</button>
-    <nav id="tag-topic" popover class="side-pop nav-list">
+    <nav id="tag-topic" popover class="drop-pop nav-list">
         
         
         
@@ -217,7 +216,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-misc">misc</button>
-    <nav id="tag-misc" popover class="side-pop nav-list">
+    <nav id="tag-misc" popover class="drop-pop nav-list">
         
         
         
@@ -274,500 +273,56 @@
 
 
 
-<div class="blog-list">
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-                <a href="/log/keyword-checker-tool/" class="blog-card">
+<div class="blog-list">                                                                                 <a href="/log/keyword-checker-tool/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">keyword checker tool</div>
         <p>add description here</p>
         <div class="blog-card-byline">2023-09-23⠀⠀170 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/merch-box-fandom-zine-trend/" class="blog-card">
+</a> <a href="/log/merch-box-fandom-zine-trend/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">What are merch boxes (fanzine trend)?</div>
         <p>What are merch boxes? Introduction to the 2023 fandom zine trend that did not actually have zines and just focused on merch.</p>
         <div class="blog-card-byline">2023-09-17⠀⠀1377 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/gachakatsu/" class="blog-card">
+</a> <a href="/log/gachakatsu/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">What is gachakatsu?</div>
         <p>Explaining the 2023 gachakatsu trend, which focused on displaying gacha collectibles in clear containers.</p>
         <div class="blog-card-byline">2023-09-16⠀⠀825 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/korean-sns-art-terms/" class="blog-card">
+</a> <a href="/log/korean-sns-art-terms/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">Korean webzines, art trades, and other SNS art terms</div>
         <p>Summary of Korean SNS art terms - 합작 (collaboration), 연성교환 (flexible exchange), and more.</p>
         <div class="blog-card-byline">2023-09-15⠀⠀1641 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/fukurotoji-pouch-book-binding/" class="blog-card">
+</a> <a href="/log/fukurotoji-pouch-book-binding/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">How to bind books with the fukurotoji method</div>
         <p>Guide to book-binding with the Japanese fukurotoji (袋とじ pouch binding) method.</p>
         <div class="blog-card-byline">2023-09-14⠀⠀702 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/auckland-zinefest-2023-report/" class="blog-card">
+</a> <a href="/log/auckland-zinefest-2023-report/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">auckland zinefest 2023 report</div>
         <p>add description here</p>
         <div class="blog-card-byline">2023-08-06⠀⠀778 words</div>
     </div>
-</a>
-    
-
-     
-        
-            
-                <a href="/log/tgaa-collab-retrospective/" class="blog-card">
+</a> <a href="/log/tgaa-collab-retrospective/" class="blog-card">
     <div class="blog-card-img"><img src="https://file.garden/aTfQE1754gctZTxl/thumb/wulfpaper.jpg" loading="lazy"></div>
     <div class="blog-card-inner">
         <div class="blog-card-title">TGAA collab retrospective</div>
         <p>add description here</p>
         <div class="blog-card-byline">2023-07-28⠀⠀2012 words</div>
     </div>
-</a>
-    
-</div>
-
-
+</a></div>
     </main>
 </body>
 </html>

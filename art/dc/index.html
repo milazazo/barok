@@ -25,8 +25,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -52,10 +52,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -79,14 +78,14 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
     <main>
         <h1>art tagged dc</h1>
         <p></p>
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
             <a href="/art/2026">2026</a>
             
@@ -163,7 +162,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-series">series</button>
-    <nav id="tag-series" popover class="side-pop nav-list">
+    <nav id="tag-series" popover class="drop-pop nav-list">
         
         
         
@@ -238,7 +237,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-character">character</button>
-    <nav id="tag-character" popover class="side-pop nav-list">
+    <nav id="tag-character" popover class="drop-pop nav-list">
         
         
         
@@ -453,7 +452,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/three-jokers.webp">
   <img src="/assets/art/2020/three-jokers.webp" loading="lazy">
   <p>redraw of DC's three jokers</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
   </div></div>
     
     
@@ -497,7 +496,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/blackquills-sandman.webp">
   <img src="/assets/art/2020/blackquills-sandman.webp" loading="lazy">
   <p>blackquill siblings as death and dream</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
   </div></div>
     
     
@@ -526,27 +525,27 @@
 <div popover="auto" class="art-pop" id="art-pop-2019/shivarus-comm.webp">
   <img src="/assets/art/2019/shivarus-comm.webp" loading="lazy">
   <p>commission for shivarus</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">dc</div>
   </div></div>
     
     <input type="image" src="/assets/art/thumb/2019/matt-ben.webp" popovertarget="art-pop-2019/matt-ben.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/matt-ben.webp">
   <img src="/assets/art/2019/matt-ben.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">dc</div>
   </div></div>
     
     <input type="image" src="/assets/art/thumb/2019/barry-bart-mario-kart.webp" popovertarget="art-pop-2019/barry-bart-mario-kart.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/barry-bart-mario-kart.webp">
   <img src="/assets/art/2019/barry-bart-mario-kart.webp" loading="lazy">
   <p>barry and bart play mario kart!!</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">dc</div>
   </div></div>
     <input type="image" src="/assets/art/thumb/2019/flash-bart.webp" popovertarget="art-pop-2019/flash-bart.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/flash-bart.webp">
   <img src="/assets/art/2019/flash-bart.webp" loading="lazy"><br><img src="/assets/art/2019/flash-barry.webp" loading="lazy"><br>
   <p>bart and barry, it’s the speedster duo across generations!</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">dc</div>
   </div></div>
     
     
@@ -659,14 +658,5 @@
 </div>
 
     </main>
-
-    <footer>
-    </footer>
-
-
-    
-    
-
-
 </body>
 </html>

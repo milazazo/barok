@@ -25,8 +25,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -52,10 +52,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -79,14 +78,14 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
     <main>
         <h1>art</h1>
         <p></p>
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
             <a href="/art/2026">2026</a>
             
@@ -163,7 +162,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-series">series</button>
-    <nav id="tag-series" popover class="side-pop nav-list">
+    <nav id="tag-series" popover class="drop-pop nav-list">
         
         
         
@@ -238,7 +237,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-character">character</button>
-    <nav id="tag-character" popover class="side-pop nav-list">
+    <nav id="tag-character" popover class="drop-pop nav-list">
         
         
         
@@ -305,1879 +304,218 @@
     <a class="nav-heading" href="/art/5/">next</a>
 
 </div>
-<div class="art-list">
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/suzaku-fired.webp" popovertarget="art-pop-2020/suzaku-fired.webp" value="" />
+<div class="art-list">                                                                                                                                                                                                                                                                                                                                                  <input type="image" src="/assets/art/thumb/2020/suzaku-fired.webp" popovertarget="art-pop-2020/suzaku-fired.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/suzaku-fired.webp">
   <img src="/assets/art/2020/suzaku-fired.webp" loading="lazy">
   <p>this is why shinsoku hasn't had an event in seven months</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/suzaku-birthday.webp" popovertarget="art-pop-2020/suzaku-birthday.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/suzaku-birthday.webp" popovertarget="art-pop-2020/suzaku-birthday.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/suzaku-birthday.webp">
   <img src="/assets/art/2020/suzaku-birthday.webp" loading="lazy">
   <p>suzaku birthday art</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/blackquill-paint.webp" popovertarget="art-pop-2020/blackquill-paint.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/blackquill-paint.webp" popovertarget="art-pop-2020/blackquill-paint.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/blackquill-paint.webp">
   <img src="/assets/art/2020/blackquill-paint.webp" loading="lazy"><br><img src="/assets/art/2020/blackquill-headshot.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/athena-trucy.webp" popovertarget="art-pop-2020/athena-trucy.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/athena-trucy.webp" popovertarget="art-pop-2020/athena-trucy.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/athena-trucy.webp">
   <img src="/assets/art/2020/athena-trucy.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/hahaha.webp" popovertarget="art-pop-2020/hahaha.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/hahaha.webp" popovertarget="art-pop-2020/hahaha.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/hahaha.webp">
   <img src="/assets/art/2020/hahaha.webp" loading="lazy">
   <p>my favorite character type is people who laugh their ass off when they see you</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/knightley-wet-hair.webp" popovertarget="art-pop-2020/knightley-wet-hair.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/knightley-wet-hair.webp" popovertarget="art-pop-2020/knightley-wet-hair.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/knightley-wet-hair.webp">
   <img src="/assets/art/2020/knightley-wet-hair.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-shirt.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-adoption.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/bad-bunny-troll.webp" popovertarget="art-pop-2020/bad-bunny-troll.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/bad-bunny-troll.webp" popovertarget="art-pop-2020/bad-bunny-troll.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/bad-bunny-troll.webp">
   <img src="/assets/art/2020/bad-bunny-troll.webp" loading="lazy">
   <p>Your name is BENITO OCASIO. You are one of the top REGGAETON artists in Alternia; you've almost started a NEW RELIGION by how many fans you have. And though there's always a ton of crowds after your performances, you know that you can always return to your lusus, the BAD BUNNY.</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bad bunny</div><div class="art-pop-tab">music</div><div class="art-pop-tab">homestuck</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/stem-girls.webp" popovertarget="art-pop-2020/stem-girls.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bad bunny</div><div class="art-pop-tab">music</div><div class="art-pop-tab">homestuck</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/stem-girls.webp" popovertarget="art-pop-2020/stem-girls.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/stem-girls.webp">
   <img src="/assets/art/2020/stem-girls.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">ema skye</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/blackquill-whats-all-this-then.webp" popovertarget="art-pop-2020/blackquill-whats-all-this-then.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">ema skye</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/blackquill-whats-all-this-then.webp" popovertarget="art-pop-2020/blackquill-whats-all-this-then.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/blackquill-whats-all-this-then.webp">
   <img src="/assets/art/2020/blackquill-whats-all-this-then.webp" loading="lazy">
   <p>british people be like *discovers their mentor has been murdered*</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/manosouta-stamp.webp" popovertarget="art-pop-2020/manosouta-stamp.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/manosouta-stamp.webp" popovertarget="art-pop-2020/manosouta-stamp.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/manosouta-stamp.webp">
   <img src="/assets/art/2020/manosouta-stamp.webp" loading="lazy"><br><img src="/assets/art/2020/manosouta-ponies.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">kay faraday</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/banana-bastards.webp" popovertarget="art-pop-2020/banana-bastards.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">kay faraday</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/banana-bastards.webp" popovertarget="art-pop-2020/banana-bastards.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/banana-bastards.webp">
   <img src="/assets/art/2020/banana-bastards.webp" loading="lazy">
   <p>banana bastards</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/athena-peanuts.webp" popovertarget="art-pop-2020/athena-peanuts.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/athena-peanuts.webp" popovertarget="art-pop-2020/athena-peanuts.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/athena-peanuts.webp">
   <img src="/assets/art/2020/athena-peanuts.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/gumshoe-request.webp" popovertarget="art-pop-2020/gumshoe-request.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/gumshoe-request.webp" popovertarget="art-pop-2020/gumshoe-request.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/gumshoe-request.webp">
   <img src="/assets/art/2020/gumshoe-request.webp" loading="lazy">
   <p>tumblr anon request</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">dick gumshoe</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/manosouta-young.webp" popovertarget="art-pop-2020/manosouta-young.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">dick gumshoe</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/manosouta-young.webp" popovertarget="art-pop-2020/manosouta-young.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/manosouta-young.webp">
   <img src="/assets/art/2020/manosouta-young.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-hair.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/knightley-grin.webp" popovertarget="art-pop-2020/knightley-grin.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/knightley-grin.webp" popovertarget="art-pop-2020/knightley-grin.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/knightley-grin.webp">
   <img src="/assets/art/2020/knightley-grin.webp" loading="lazy"><br><img src="/assets/art/2020/manosouta-support-clown.webp" loading="lazy"><br>
   <p>horace knightley brain damage</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/wright-offices.webp" popovertarget="art-pop-2020/wright-offices.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/wright-offices.webp" popovertarget="art-pop-2020/wright-offices.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/wright-offices.webp">
   <img src="/assets/art/2020/wright-offices.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">phoenix wright</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/blackquills-sandman.webp" popovertarget="art-pop-2020/blackquills-sandman.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">phoenix wright</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/blackquills-sandman.webp" popovertarget="art-pop-2020/blackquills-sandman.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/blackquills-sandman.webp">
   <img src="/assets/art/2020/blackquills-sandman.webp" loading="lazy">
   <p>blackquill siblings as death and dream</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/ema-science.webp" popovertarget="art-pop-2020/ema-science.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">dc</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/ema-science.webp" popovertarget="art-pop-2020/ema-science.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/ema-science.webp">
   <img src="/assets/art/2020/ema-science.webp" loading="lazy">
   <p>pov: YOU are the fingerprints</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">ema skye</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/trucy-magician.webp" popovertarget="art-pop-2020/trucy-magician.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">ema skye</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/trucy-magician.webp" popovertarget="art-pop-2020/trucy-magician.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/trucy-magician.webp">
   <img src="/assets/art/2020/trucy-magician.webp" loading="lazy"><br><img src="/assets/art/2020/trucy-tada.webp" loading="lazy"><br>
   <p>the greatest magician in the world!</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/hokuto-piano.webp" popovertarget="art-pop-2020/hokuto-piano.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/hokuto-piano.webp" popovertarget="art-pop-2020/hokuto-piano.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/hokuto-piano.webp">
   <img src="/assets/art/2020/hokuto-piano.webp" loading="lazy">
   <p>hokuto birthday art</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">touma amagase</div><div class="art-pop-tab">shouta mitarai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/hokumai-karaoke.webp" popovertarget="art-pop-2020/hokumai-karaoke.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">touma amagase</div><div class="art-pop-tab">shouta mitarai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/hokumai-karaoke.webp" popovertarget="art-pop-2020/hokumai-karaoke.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/hokumai-karaoke.webp">
   <img src="/assets/art/2020/hokumai-karaoke.webp" loading="lazy">
   <p>#sideMvalentine2020 gift for @crislscore </p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">rui maita</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/aa-sprite-redraw.webp" popovertarget="art-pop-2020/aa-sprite-redraw.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">rui maita</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/aa-sprite-redraw.webp" popovertarget="art-pop-2020/aa-sprite-redraw.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/aa-sprite-redraw.webp">
   <img src="/assets/art/2020/aa-sprite-redraw.webp" loading="lazy">
   <p>sprite redraws</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/blackquill-maya.webp" popovertarget="art-pop-2020/blackquill-maya.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/blackquill-maya.webp" popovertarget="art-pop-2020/blackquill-maya.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/blackquill-maya.webp">
   <img src="/assets/art/2020/blackquill-maya.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">maya fey</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2020/matt-aa4.webp" popovertarget="art-pop-2020/matt-aa4.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">maya fey</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2020/matt-aa4.webp" popovertarget="art-pop-2020/matt-aa4.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/matt-aa4.webp">
   <img src="/assets/art/2020/matt-aa4.webp" loading="lazy">
   <p>apollo justice-style sprite redraw</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">matt engarde</div><div class="art-pop-tab">ace attorney</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/shinsoku-yankee.webp" popovertarget="art-pop-2019/shinsoku-yankee.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">matt engarde</div><div class="art-pop-tab">ace attorney</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/shinsoku-yankee.webp" popovertarget="art-pop-2019/shinsoku-yankee.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-yankee.webp">
   <img src="/assets/art/2019/shinsoku-yankee.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/shinsoku-day-off.webp" popovertarget="art-pop-2019/shinsoku-day-off.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/shinsoku-day-off.webp" popovertarget="art-pop-2019/shinsoku-day-off.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-day-off.webp">
   <img src="/assets/art/2019/shinsoku-day-off.webp" loading="lazy">
   <p>illust for a zine that never materialized... theme was day in the life of shinsoku ikkon</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/world-treasure-uk.webp" popovertarget="art-pop-2019/world-treasure-uk.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/world-treasure-uk.webp" popovertarget="art-pop-2019/world-treasure-uk.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/world-treasure-uk.webp">
   <img src="/assets/art/2019/world-treasure-uk.webp" loading="lazy">
   <p>WORLD TRE@SURE IN UNITED KINGDOM is secretly a punk group and i will accept nothing else</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">kaoru sakuraba</div><div class="art-pop-tab">kazuki tsukumo</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/daredevil-spidergwen.webp" popovertarget="art-pop-2019/daredevil-spidergwen.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">kaoru sakuraba</div><div class="art-pop-tab">kazuki tsukumo</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/daredevil-spidergwen.webp" popovertarget="art-pop-2019/daredevil-spidergwen.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/daredevil-spidergwen.webp">
   <img src="/assets/art/2019/daredevil-spidergwen.webp" loading="lazy">
   <p>like a spider caught in its own web</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">marvel</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/medieval-dragon.webp" popovertarget="art-pop-2019/medieval-dragon.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">marvel</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/medieval-dragon.webp" popovertarget="art-pop-2019/medieval-dragon.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/medieval-dragon.webp">
   <img src="/assets/art/2019/medieval-dragon.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/white-angel.webp" popovertarget="art-pop-2019/white-angel.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">original</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/white-angel.webp" popovertarget="art-pop-2019/white-angel.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/white-angel.webp">
   <img src="/assets/art/2019/white-angel.webp" loading="lazy">
   <p>the good lord keeps sending me white angels and i don't want them</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/shinsoku-best-game-au.webp" popovertarget="art-pop-2019/shinsoku-best-game-au.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">original</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/shinsoku-best-game-au.webp" popovertarget="art-pop-2019/shinsoku-best-game-au.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/shinsoku-best-game-au.webp">
   <img src="/assets/art/2019/shinsoku-best-game-au.webp" loading="lazy">
   <p>shinsoku best game au</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/ken-gacha.webp" popovertarget="art-pop-2019/ken-gacha.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/ken-gacha.webp" popovertarget="art-pop-2019/ken-gacha.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/ken-gacha.webp">
   <img src="/assets/art/2019/ken-gacha.webp" loading="lazy">
   <p>fanart of @yumarowen's ken song</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">ken yamamura</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/jiro-tanabata.webp" popovertarget="art-pop-2019/jiro-tanabata.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">ken yamamura</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/jiro-tanabata.webp" popovertarget="art-pop-2019/jiro-tanabata.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/jiro-tanabata.webp">
   <img src="/assets/art/2019/jiro-tanabata.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">jiro yamashita</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/genbu-soichiro-glasses.webp" popovertarget="art-pop-2019/genbu-soichiro-glasses.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">jiro yamashita</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/genbu-soichiro-glasses.webp" popovertarget="art-pop-2019/genbu-soichiro-glasses.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/genbu-soichiro-glasses.webp">
   <img src="/assets/art/2019/genbu-soichiro-glasses.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">soichiro shinonome</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/genbu-kurono-with-middle-finger.webp" popovertarget="art-pop-2019/genbu-kurono-with-middle-finger.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">soichiro shinonome</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/genbu-kurono-with-middle-finger.webp" popovertarget="art-pop-2019/genbu-kurono-with-middle-finger.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/genbu-kurono-with-middle-finger.webp">
   <img src="/assets/art/2019/genbu-kurono-with-middle-finger.webp" loading="lazy">
   <p>Genbu with middle finger</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><a href="https://www.deviantart.com/taegurk123/art/Sachiko-with-middle-finger-617529033"><div class="art-pop-tab">★</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/genbu-headshot.webp" popovertarget="art-pop-2019/genbu-headshot.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><a href="https://www.deviantart.com/taegurk123/art/Sachiko-with-middle-finger-617529033"><div class="art-pop-tab">★</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/genbu-headshot.webp" popovertarget="art-pop-2019/genbu-headshot.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/genbu-headshot.webp">
   <img src="/assets/art/2019/genbu-headshot.webp" loading="lazy">
   <p>that one time i copied the art style from the dr strange comics</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/egao-no-matsuri-nya.webp" popovertarget="art-pop-2019/egao-no-matsuri-nya.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/egao-no-matsuri-nya.webp" popovertarget="art-pop-2019/egao-no-matsuri-nya.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/egao-no-matsuri-nya.webp">
   <img src="/assets/art/2019/egao-no-matsuri-nya.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/touma-bucky.webp" popovertarget="art-pop-2019/touma-bucky.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/touma-bucky.webp" popovertarget="art-pop-2019/touma-bucky.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/touma-bucky.webp">
   <img src="/assets/art/2019/touma-bucky.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">touma amagase</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/genbu-punk.webp" popovertarget="art-pop-2019/genbu-punk.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">touma amagase</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/genbu-punk.webp" popovertarget="art-pop-2019/genbu-punk.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/genbu-punk.webp">
   <img src="/assets/art/2019/genbu-punk.webp" loading="lazy"><br><img src="/assets/art/2019/genbu-monk.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/amana-scarf-1.webp" popovertarget="art-pop-2019/amana-scarf-1.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/amana-scarf-1.webp" popovertarget="art-pop-2019/amana-scarf-1.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/amana-scarf-1.webp">
   <img src="/assets/art/2019/amana-scarf-1.webp" loading="lazy"><br><img src="/assets/art/2019/amana-scarf-2.webp" loading="lazy"><br>
   <p>and she's been my best girl ever since</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">amana osaki</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/syuko-fox.webp" popovertarget="art-pop-2019/syuko-fox.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">amana osaki</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/syuko-fox.webp" popovertarget="art-pop-2019/syuko-fox.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/syuko-fox.webp">
   <img src="/assets/art/2019/syuko-fox.webp" loading="lazy">
   <p>commission for yuri</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">syuko shiomi</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2019/shivarus-comm.webp" popovertarget="art-pop-2019/shivarus-comm.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">syuko shiomi</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2019/shivarus-comm.webp" popovertarget="art-pop-2019/shivarus-comm.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2019/shivarus-comm.webp">
   <img src="/assets/art/2019/shivarus-comm.webp" loading="lazy">
   <p>commission for shivarus</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2019</div></a><div class="art-pop-tab">dc</div>
-  </div></div>
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2019</div><div class="art-pop-tab">dc</div>
+  </div></div>                                                                                                                                                                                                                                </div>
 
     </main>
-
-    <footer>
-    </footer>
-
-
-    
-    
-
-
 </body>
 </html>

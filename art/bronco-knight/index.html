@@ -25,8 +25,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -52,10 +52,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -79,14 +78,14 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
     <main>
         <h1>art tagged bronco knight</h1>
         <p>my fanart of bronco knight (horace knightley/manosuke naito) from the great ace attorney 2!</p>
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
             <a href="/art/2026">2026</a>
             
@@ -163,7 +162,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-series">series</button>
-    <nav id="tag-series" popover class="side-pop nav-list">
+    <nav id="tag-series" popover class="drop-pop nav-list">
         
         
         
@@ -238,7 +237,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-character">character</button>
-    <nav id="tag-character" popover class="side-pop nav-list">
+    <nav id="tag-character" popover class="drop-pop nav-list">
         
         
         
@@ -412,7 +411,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2022/knightley-plush.webp">
   <img src="/assets/art/2022/knightley-plush.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-plush.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -420,13 +419,13 @@
 <div popover="auto" class="art-pop" id="art-pop-2022/keyes-pouch.webp">
   <img src="/assets/art/2022/keyes-pouch.webp" loading="lazy"><br><img src="/assets/art/2022/keyes-pouch-promo" loading="lazy"><br><img src="/assets/art/2022/aai2-stickers.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     <input type="image" src="/assets/art/2022/manosouta-smoke.webp" popovertarget="art-pop-2022/manosouta-smoke.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2022/manosouta-smoke.webp">
   <img src="/assets/art/2022/manosouta-smoke.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-malborough.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-mcr.webp" loading="lazy"><br><img src="/assets/art/2022/manosouta-kiss.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2022</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2022</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -456,7 +455,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2021/knightley-dog.webp">
   <img src="/assets/art/2021/knightley-dog.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2021</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2021</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -476,7 +475,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/manosouta-homestuck.webp">
   <img src="/assets/art/2020/manosouta-homestuck.webp" loading="lazy"><br><img src="/assets/art/2020/manosouta-silly.webp" loading="lazy"><br>
   <p>horace knightley was 15 years old in 2010. ‘act 5′ of homestuck began in 2010. this is the ‘part’ of homestuck which is most well known as it is the introduction of the ‘troll’ characters. i believe that knightley, as a teenager in 2010 was a fan of homestuck due to its emerging popularity on tumblr.com. there are two important points:nn1. he was fictionkin of dave strider: there are multiple reasons. they’re both knight themed, they want to protect the people they like (this is me trying to believe knightley genuinely cares about keyes), 'the trauma is there but they don’t cope with it or go to therapy', and they have a fucked up relationship with their ‘dads’.nn2. he cosplayed gamkar with keyes: i don’t ship gamkar but keyes is a clown and knightley has karkat vibes too. i think that manosouta’s relationship is best represented through homestuck troll quadrants. they were morails back when people called each other that. keyes always thought it was cringe and knightley only realized it was cringe later (but he still thinks of him that way). keyes clearly experiences kismesissitude towards knightley but he refuses to call it that.nnafter knightley’s tumblr/homestuck era he started using 4chan and hating on fictionkinnies for fun also he’s an anti-sjw at this point despite being bisexual. i don’t really want to talk about this time you know how it is. then he became normal and stopped using every social media except facebook (he harasses people with those ‘want to play a game with me?’ messages with facebook chess or something) and reddit i also don’t want to talk about this.nnhe started watching bojack horseman in 2015 and kept up with the series until his death in 2019. he doesn’t call himself a kinnie but he’s definitely one of those people who project way too strongly onto bojack. this time, my reasoning is that he’s horse themed, a really big shithead, gets jealous of others easily, and hates french people like bojack hates horses.nnthat last point is another headcanon; after receiving the PH ring, he believed his father was french (because he didn’t find out about pierre hoquet being isaac dover). knightley has very faint memories compared to keyes, but i think he’d still remember how badly his father treated him, leading to his hatred of the french.</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">homestuck</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div><div class="art-pop-tab">homestuck</div>
   </div></div>
     
     
@@ -484,7 +483,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/aa-discord-redraw-1.webp">
   <img src="/assets/art/2020/aa-discord-redraw-1.webp" loading="lazy"><br><img src="/assets/art/2020/aa-discord-redraw-2.webp" loading="lazy"><br><img src="/assets/art/2020/aa-discord-redraw-3.webp" loading="lazy"><br>
   <p>nahyuta represents antis guy was an anonymous user on phoenix wright kink meme (?) who wrote like two paragraphs on how nahyuta’s righteous personality represented him being an anti in fandom. girl what are you on about</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -493,7 +492,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/aa-family-zine.webp">
   <img src="/assets/art/2020/aa-family-zine.webp" loading="lazy">
   <p>illust for we always return (ace attorney family/season zine)</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -504,7 +503,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/knightley-green.webp">
   <img src="/assets/art/2020/knightley-green.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -514,7 +513,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/aai2-chibi.webp">
   <img src="/assets/art/2020/aai2-chibi.webp" loading="lazy"><br><img src="/assets/art/2020/aa5-chibi.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">athena cykes</div><div class="art-pop-tab">simon blackquill</div><div class="art-pop-tab">aura blackquill</div><div class="art-pop-tab">trucy wright</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -525,7 +524,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/knightley-wet-hair.webp">
   <img src="/assets/art/2020/knightley-wet-hair.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-shirt.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-adoption.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -535,12 +534,12 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/manosouta-stamp.webp">
   <img src="/assets/art/2020/manosouta-stamp.webp" loading="lazy"><br><img src="/assets/art/2020/manosouta-ponies.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">kay faraday</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">kay faraday</div><div class="art-pop-tab">ace attorney</div>
   </div></div><input type="image" src="/assets/art/thumb/2020/banana-bastards.webp" popovertarget="art-pop-2020/banana-bastards.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/banana-bastards.webp">
   <img src="/assets/art/2020/banana-bastards.webp" loading="lazy">
   <p>banana bastards</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -549,13 +548,13 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/manosouta-young.webp">
   <img src="/assets/art/2020/manosouta-young.webp" loading="lazy"><br><img src="/assets/art/2020/knightley-hair.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     <input type="image" src="/assets/art/2020/knightley-grin.webp" popovertarget="art-pop-2020/knightley-grin.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2020/knightley-grin.webp">
   <img src="/assets/art/2020/knightley-grin.webp" loading="lazy"><br><img src="/assets/art/2020/manosouta-support-clown.webp" loading="lazy"><br>
   <p>horace knightley brain damage</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">bronco knight</div><div class="art-pop-tab">simeon saint</div><div class="art-pop-tab">ace attorney</div>
   </div></div>
     
     
@@ -699,14 +698,5 @@
 </div>
 
     </main>
-
-    <footer>
-    </footer>
-
-
-    
-    
-
-
 </body>
 </html>

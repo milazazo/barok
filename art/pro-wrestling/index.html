@@ -25,8 +25,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -52,10 +52,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -79,14 +78,14 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
     <main>
         <h1>art tagged pro wrestling</h1>
         <p></p>
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
             <a href="/art/2026">2026</a>
             
@@ -163,7 +162,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-series">series</button>
-    <nav id="tag-series" popover class="side-pop nav-list">
+    <nav id="tag-series" popover class="drop-pop nav-list">
         
         
         
@@ -238,7 +237,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-character">character</button>
-    <nav id="tag-character" popover class="side-pop nav-list">
+    <nav id="tag-character" popover class="drop-pop nav-list">
         
         
         
@@ -308,7 +307,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2026/pro_wrestling_sketches.webp">
   <img src="/assets/art/2026/pro_wrestling_sketches.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">pro wrestling</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div><div class="art-pop-tab">pro wrestling</div>
   </div></div>
     
     
@@ -318,7 +317,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2026/one_fall_cover.webp">
   <img src="/assets/art/2026/one_fall_cover.webp" loading="lazy"><br><img src="/assets/art/2026/one_fall_cover_old.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2026</div></a><div class="art-pop-tab">pro wrestling</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2026</div><div class="art-pop-tab">pro wrestling</div>
   </div></div>
     
     
@@ -468,7 +467,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/kenny-omega-bandori.webp">
   <img src="/assets/art/2020/kenny-omega-bandori.webp" loading="lazy">
   <p>everyone watch the njpw bandori ad now</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><a href="https://www.youtube.com/watch?v=k2Mw3ZV5JPc"><div class="art-pop-tab">★</div></a><div class="art-pop-tab">bandori</div><div class="art-pop-tab">pro wrestling</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><a href="https://www.youtube.com/watch?v=k2Mw3ZV5JPc"><div class="art-pop-tab">★</div></a><div class="art-pop-tab">bandori</div><div class="art-pop-tab">pro wrestling</div>
   </div></div>
     
     
@@ -481,7 +480,7 @@
 <div popover="auto" class="art-pop" id="art-pop-2020/kof-john-cenaaa.webp">
   <img src="/assets/art/2020/kof-john-cenaaa.webp" loading="lazy">
   <p>the start of my obsession with pro wrestling, can you believe it!</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2020</div></a><div class="art-pop-tab">kof</div><div class="art-pop-tab">pro wrestling</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2020</div><div class="art-pop-tab">kof</div><div class="art-pop-tab">pro wrestling</div>
   </div></div>
     
     
@@ -649,14 +648,5 @@
 </div>
 
     </main>
-
-    <footer>
-    </footer>
-
-
-    
-    
-
-
 </body>
 </html>

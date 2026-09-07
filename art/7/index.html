@@ -25,8 +25,8 @@
 </head>
 <body>
     <header>
-        <div class="nav-box desktop-only">
-    <a href="/" class="title">username</a>
+        <div class="desktop-only">
+    <a href="/" class="title">wulfpaper</a>
     <br>
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
@@ -52,10 +52,9 @@
         <a href="/log">youtube</a>
     </nav>
 </div>
-<a href="/" class="title mobile-only">username</a>
-<details class="nav-box mobile-only">
-    <summary class="nav-menu-button"></summary>
-    <br>
+<a href="/" class="title mobile-only">wulfpaper</a>
+<button popovertarget="mobile-menu" class="mobile-only">≡</button>
+<div class="drop-pop mobile-only" popover="auto" id="mobile-menu">
     <a href="/log" class="nav-heading">log</a>
     <nav class="nav-list">
         <a href="/log/recap">recap</a>
@@ -79,14 +78,14 @@
         <a href="/log">rss feed</a>
         <a href="/log">youtube</a>
     </nav>
-</details>
+</div>
     </header>
     <main>
         <h1>art</h1>
         <p></p>
-        <div id="side" class="nav-box">
+        <div id="side">
     <button class="nav-heading" popovertarget="tag-year">year</button>
-    <nav id="tag-year" popover class="side-pop nav-list">
+    <nav id="tag-year" popover class="drop-pop nav-list">
         
             <a href="/art/2026">2026</a>
             
@@ -163,7 +162,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-series">series</button>
-    <nav id="tag-series" popover class="side-pop nav-list">
+    <nav id="tag-series" popover class="drop-pop nav-list">
         
         
         
@@ -238,7 +237,7 @@
         
     </nav>
     <button class="nav-heading" popovertarget="tag-character">character</button>
-    <nav id="tag-character" popover class="side-pop nav-list">
+    <nav id="tag-character" popover class="drop-pop nav-list">
         
         
         
@@ -305,1795 +304,148 @@
     <div class="nav-heading" style="background-color: var(--light-gray-color);color: var(--accent-color);">next</div>
 
 </div>
-<div class="art-list">
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/shinsoku-tv.webp" popovertarget="art-pop-2016/shinsoku-tv.webp" value="" />
+<div class="art-list">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <input type="image" src="/assets/art/thumb/2016/shinsoku-tv.webp" popovertarget="art-pop-2016/shinsoku-tv.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/shinsoku-tv.webp">
   <img src="/assets/art/2016/shinsoku-tv.webp" loading="lazy">
   <p>i still really like this one lol</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/kaoru-amehiko-dentist.webp" popovertarget="art-pop-2016/kaoru-amehiko-dentist.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">suzaku akai</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/kaoru-amehiko-dentist.webp" popovertarget="art-pop-2016/kaoru-amehiko-dentist.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/kaoru-amehiko-dentist.webp">
   <img src="/assets/art/2016/kaoru-amehiko-dentist.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">kaoru sakuraba</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/jun-kei-piano.webp" popovertarget="art-pop-2016/jun-kei-piano.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">kaoru sakuraba</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/jun-kei-piano.webp" popovertarget="art-pop-2016/jun-kei-piano.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/jun-kei-piano.webp">
   <img src="/assets/art/2016/jun-kei-piano.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">kei tsuzuki</div><div class="art-pop-tab">jun fuyumi</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/forehead-trio-gyaruo.webp" popovertarget="art-pop-2016/forehead-trio-gyaruo.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">kei tsuzuki</div><div class="art-pop-tab">jun fuyumi</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/forehead-trio-gyaruo.webp" popovertarget="art-pop-2016/forehead-trio-gyaruo.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/forehead-trio-gyaruo.webp">
   <img src="/assets/art/2016/forehead-trio-gyaruo.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/maki-bunny.webp" popovertarget="art-pop-2016/maki-bunny.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">hokuto ijuuin</div><div class="art-pop-tab">amehiko kuzunoha</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/maki-bunny.webp" popovertarget="art-pop-2016/maki-bunny.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/maki-bunny.webp">
   <img src="/assets/art/2016/maki-bunny.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">maki nishikino</div><div class="art-pop-tab">love live</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/saki-birthday.webp" popovertarget="art-pop-2016/saki-birthday.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">maki nishikino</div><div class="art-pop-tab">love live</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/saki-birthday.webp" popovertarget="art-pop-2016/saki-birthday.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/saki-birthday.webp">
   <img src="/assets/art/2016/saki-birthday.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">saki mizushima</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/genbu-daigo-crafts.webp" popovertarget="art-pop-2016/genbu-daigo-crafts.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">saki mizushima</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/genbu-daigo-crafts.webp" popovertarget="art-pop-2016/genbu-daigo-crafts.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/genbu-daigo-crafts.webp">
   <img src="/assets/art/2016/genbu-daigo-crafts.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">daigo kabuto</div><div class="art-pop-tab">idolmaster</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/jotakak-matsuo.webp" popovertarget="art-pop-2016/jotakak-matsuo.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">genbu kurono</div><div class="art-pop-tab">daigo kabuto</div><div class="art-pop-tab">idolmaster</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/jotakak-matsuo.webp" popovertarget="art-pop-2016/jotakak-matsuo.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/jotakak-matsuo.webp">
   <img src="/assets/art/2016/jotakak-matsuo.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">jotaro kujo</div><div class="art-pop-tab">kakyoin noriaki</div><div class="art-pop-tab">jjba</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/yoshiko-kyute.webp" popovertarget="art-pop-2016/yoshiko-kyute.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">jotaro kujo</div><div class="art-pop-tab">kakyoin noriaki</div><div class="art-pop-tab">jjba</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/yoshiko-kyute.webp" popovertarget="art-pop-2016/yoshiko-kyute.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/yoshiko-kyute.webp">
   <img src="/assets/art/2016/yoshiko-kyute.webp" loading="lazy">
   <p>( ≧ ∀ ≦ )७</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">love live</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/honoka-umi.webp" popovertarget="art-pop-2016/honoka-umi.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">love live</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/honoka-umi.webp" popovertarget="art-pop-2016/honoka-umi.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/honoka-umi.webp">
   <img src="/assets/art/2016/honoka-umi.webp" loading="lazy"><br><img src="/assets/art/2016/maki.webp" loading="lazy"><br>
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">love live</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/saiki-pudding.webp" popovertarget="art-pop-2016/saiki-pudding.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">love live</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/saiki-pudding.webp" popovertarget="art-pop-2016/saiki-pudding.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/saiki-pudding.webp">
   <img src="/assets/art/2016/saiki-pudding.webp" loading="lazy">
   <p>my only claim to fame is being really early to saiki kusuo no psi nan</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">kusuo saiki</div><div class="art-pop-tab">saiki k</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/trish-pop.webp" popovertarget="art-pop-2016/trish-pop.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">kusuo saiki</div><div class="art-pop-tab">saiki k</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/trish-pop.webp" popovertarget="art-pop-2016/trish-pop.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/trish-pop.webp">
   <img src="/assets/art/2016/trish-pop.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">trish una</div><div class="art-pop-tab">jjba</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/moon-yuri.webp" popovertarget="art-pop-2016/moon-yuri.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">trish una</div><div class="art-pop-tab">jjba</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/moon-yuri.webp" popovertarget="art-pop-2016/moon-yuri.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/moon-yuri.webp">
   <img src="/assets/art/2016/moon-yuri.webp" loading="lazy">
   <p>‘you’re cute’n‘no i’m beautiful get your damn aesthetics right’</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/zero-headshot.webp" popovertarget="art-pop-2016/zero-headshot.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">original</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/zero-headshot.webp" popovertarget="art-pop-2016/zero-headshot.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/zero-headshot.webp">
   <img src="/assets/art/2016/zero-headshot.webp" loading="lazy">
   <p>i liked this guy way too much for someone who never played fire emblem</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">zero</div><div class="art-pop-tab">fire emblem</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/kosaka-headshot.webp" popovertarget="art-pop-2016/kosaka-headshot.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">zero</div><div class="art-pop-tab">fire emblem</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/kosaka-headshot.webp" popovertarget="art-pop-2016/kosaka-headshot.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/kosaka-headshot.webp">
   <img src="/assets/art/2016/kosaka-headshot.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">shuntaro kosaka</div><div class="art-pop-tab">oresama teacher</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/hayasaka-in-the-bush.webp" popovertarget="art-pop-2016/hayasaka-in-the-bush.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">shuntaro kosaka</div><div class="art-pop-tab">oresama teacher</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/hayasaka-in-the-bush.webp" popovertarget="art-pop-2016/hayasaka-in-the-bush.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/hayasaka-in-the-bush.webp">
   <img src="/assets/art/2016/hayasaka-in-the-bush.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">kaori hayasaka</div><div class="art-pop-tab">oresama teacher</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/lisa-lisa-wont-worry.webp" popovertarget="art-pop-2016/lisa-lisa-wont-worry.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">kaori hayasaka</div><div class="art-pop-tab">oresama teacher</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/lisa-lisa-wont-worry.webp" popovertarget="art-pop-2016/lisa-lisa-wont-worry.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/lisa-lisa-wont-worry.webp">
   <img src="/assets/art/2016/lisa-lisa-wont-worry.webp" loading="lazy">
   <p>i wont worry anymore</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">lisa lisa</div><div class="art-pop-tab">jjba</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2016/kakyoin-hearts.webp" popovertarget="art-pop-2016/kakyoin-hearts.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">lisa lisa</div><div class="art-pop-tab">jjba</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2016/kakyoin-hearts.webp" popovertarget="art-pop-2016/kakyoin-hearts.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2016/kakyoin-hearts.webp">
   <img src="/assets/art/2016/kakyoin-hearts.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2016</div></a><div class="art-pop-tab">noriaki kakyoin</div><div class="art-pop-tab">jjba</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2015/sakura-nozaki-christmas.webp" popovertarget="art-pop-2015/sakura-nozaki-christmas.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2016</div><div class="art-pop-tab">noriaki kakyoin</div><div class="art-pop-tab">jjba</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2015/sakura-nozaki-christmas.webp" popovertarget="art-pop-2015/sakura-nozaki-christmas.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2015/sakura-nozaki-christmas.webp">
   <img src="/assets/art/2015/sakura-nozaki-christmas.webp" loading="lazy">
   <p>secret santa gift for @thinkmooinc</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2015</div></a><div class="art-pop-tab">umetaro nozaki</div><div class="art-pop-tab">chiyo sakura</div><div class="art-pop-tab">mgnk</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2015/oresama-cross.webp" popovertarget="art-pop-2015/oresama-cross.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2015</div><div class="art-pop-tab">umetaro nozaki</div><div class="art-pop-tab">chiyo sakura</div><div class="art-pop-tab">mgnk</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2015/oresama-cross.webp" popovertarget="art-pop-2015/oresama-cross.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2015/oresama-cross.webp">
   <img src="/assets/art/2015/oresama-cross.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2015</div></a><div class="art-pop-tab">mafuyu kurosaki</div><div class="art-pop-tab">asahi sakurada</div><div class="art-pop-tab">oresama teacher</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2015/mafuyu-pixels.webp" popovertarget="art-pop-2015/mafuyu-pixels.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2015</div><div class="art-pop-tab">mafuyu kurosaki</div><div class="art-pop-tab">asahi sakurada</div><div class="art-pop-tab">oresama teacher</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2015/mafuyu-pixels.webp" popovertarget="art-pop-2015/mafuyu-pixels.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2015/mafuyu-pixels.webp">
   <img src="/assets/art/2015/mafuyu-pixels.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2015</div></a><div class="art-pop-tab">mafuyu kurosaki</div><div class="art-pop-tab">oresama teacher</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2013/rose-lalonde-light.webp" popovertarget="art-pop-2013/rose-lalonde-light.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2015</div><div class="art-pop-tab">mafuyu kurosaki</div><div class="art-pop-tab">oresama teacher</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2013/rose-lalonde-light.webp" popovertarget="art-pop-2013/rose-lalonde-light.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2013/rose-lalonde-light.webp">
   <img src="/assets/art/2013/rose-lalonde-light.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2013</div></a><div class="art-pop-tab">rose lalonde</div><div class="art-pop-tab">homestuck</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2013/rose-lalonde-dark.webp" popovertarget="art-pop-2013/rose-lalonde-dark.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2013</div><div class="art-pop-tab">rose lalonde</div><div class="art-pop-tab">homestuck</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2013/rose-lalonde-dark.webp" popovertarget="art-pop-2013/rose-lalonde-dark.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2013/rose-lalonde-dark.webp">
   <img src="/assets/art/2013/rose-lalonde-dark.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2013</div></a><div class="art-pop-tab">rose lalonde</div><div class="art-pop-tab">homestuck</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2013/me-irl.webp" popovertarget="art-pop-2013/me-irl.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2013</div><div class="art-pop-tab">rose lalonde</div><div class="art-pop-tab">homestuck</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2013/me-irl.webp" popovertarget="art-pop-2013/me-irl.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2013/me-irl.webp">
   <img src="/assets/art/2013/me-irl.webp" loading="lazy">
   <p>drawing of myself in middle school</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2013</div></a><div class="art-pop-tab">original</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2013/my-froggy-stuff.webp" popovertarget="art-pop-2013/my-froggy-stuff.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2013</div><div class="art-pop-tab">original</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2013/my-froggy-stuff.webp" popovertarget="art-pop-2013/my-froggy-stuff.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2013/my-froggy-stuff.webp">
   <img src="/assets/art/2013/my-froggy-stuff.webp" loading="lazy">
   <p>fanart of myfroggystuff LOL. i used to watch her videos all the time!</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2013</div></a><div class="art-pop-tab">youtube</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2013/homestuck-troll.webp" popovertarget="art-pop-2013/homestuck-troll.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2013</div><div class="art-pop-tab">youtube</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2013/homestuck-troll.webp" popovertarget="art-pop-2013/homestuck-troll.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2013/homestuck-troll.webp">
   <img src="/assets/art/2013/homestuck-troll.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2013</div></a><div class="art-pop-tab">homestuck</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2012/reisen-gulp.webp" popovertarget="art-pop-2012/reisen-gulp.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2013</div><div class="art-pop-tab">homestuck</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2012/reisen-gulp.webp" popovertarget="art-pop-2012/reisen-gulp.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2012/reisen-gulp.webp">
   <img src="/assets/art/2012/reisen-gulp.webp" loading="lazy">
   
-  <div class="art-pop-bar"><div class="art-pop-tab">2012</div></a><div class="art-pop-tab">touhou</div>
-  </div></div>
-    
-
-     
-        
-            
-                <input type="image" src="/assets/art/thumb/2012/zorobin-1.webp" popovertarget="art-pop-2012/zorobin-1.webp" value="" />
+  <div class="art-pop-bar"><div class="art-pop-tab">2012</div><div class="art-pop-tab">touhou</div>
+  </div></div>  <input type="image" src="/assets/art/thumb/2012/zorobin-1.webp" popovertarget="art-pop-2012/zorobin-1.webp" value="" />
 <div popover="auto" class="art-pop" id="art-pop-2012/zorobin-1.webp">
   <img src="/assets/art/2012/zorobin-1.webp" loading="lazy"><br><img src="/assets/art/2012/zorobin-2.webp" loading="lazy"><br>
   <p>i liked zoro/robin so much when i was a kid LOL</p>
-  <div class="art-pop-bar"><div class="art-pop-tab">2012</div></a><div class="art-pop-tab">one piece</div>
-  </div></div>
-    
-</div>
+  <div class="art-pop-bar"><div class="art-pop-tab">2012</div><div class="art-pop-tab">one piece</div>
+  </div></div></div>
 
     </main>
-
-    <footer>
-    </footer>
-
-
-    
-    
-
-
 </body>
 </html>
